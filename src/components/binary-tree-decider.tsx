@@ -1,12 +1,12 @@
 'use client';
 
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useCallback, memo } from 'react';
 import type { FC } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
-import { ArrowLeft, RotateCcw, ExternalLink, TreePine, GitBranch, CheckCircle, XCircle } from 'lucide-react';
+import { ArrowLeft, RotateCcw, ExternalLink, TreePine, GitBranch, CheckCircle } from 'lucide-react';
 import { Badge } from './ui/badge';
 import { Separator } from './ui/separator';
 import treeData from '@/lib/tree.json';
@@ -31,7 +31,7 @@ export function BinaryTreeDecider() {
   const isResult = useMemo(() => currentNode ? isTerminalNode(currentNode) : false, [currentNode]);
   const pathSummary = useMemo(() => generatePathSummary(tree, history), [history]);
 
-  const handleOptionSelect = (optionText: string) => {
+  const handleOptionSelect = useCallback((optionText: string) => {
     if (!currentNode || isResult) return;
 
     const nextId = walkTree(tree, currentId, optionText);
@@ -39,9 +39,9 @@ export function BinaryTreeDecider() {
       setHistory(prev => [...prev, { nodeId: currentId, answer: optionText }]);
       setCurrentId(nextId);
     }
-  };
+  }, [currentNode, isResult, currentId]);
 
-  const handleBack = () => {
+  const handleBack = useCallback(() => {
     if (history.length === 0) return;
 
     const newHistory = [...history];
@@ -51,12 +51,12 @@ export function BinaryTreeDecider() {
       setCurrentId(lastStep.nodeId);
       setHistory(newHistory);
     }
-  };
+  }, [history]);
 
-  const handleRestart = () => {
+  const handleRestart = useCallback(() => {
     setCurrentId('start');
     setHistory([]);
-  };
+  }, []);
 
   // Calculate progress based on typical tree depth
   const progress = isResult ? 100 : Math.min((history.length / 5) * 100, 90);
@@ -187,7 +187,7 @@ interface QuestionViewProps {
   onOptionSelect: (optionText: string) => void;
 }
 
-const QuestionView: FC<QuestionViewProps> = ({ node, onOptionSelect }) => {
+const QuestionView: FC<QuestionViewProps> = memo(({ node, onOptionSelect }) => {
   if (!node.question || !node.options) return null;
 
   const getGridCols = (optionCount: number) => {
@@ -233,7 +233,7 @@ const QuestionView: FC<QuestionViewProps> = ({ node, onOptionSelect }) => {
           <GitBranch className="h-5 w-5" />
           <span className="text-sm font-medium uppercase tracking-wider">Decision Node</span>
         </div>
-        <h2 className="text-3xl font-bold mb-3 text-black dark:text-white">{node.question}</h2>
+        <h2 className="text-2xl font-bold mb-3 text-black dark:text-white">{node.question}</h2>
         <p className="text-gray-600 dark:text-gray-400 text-sm max-w-2xl mx-auto">
           {getNodeDescription(node.id)}
         </p>
@@ -256,18 +256,18 @@ const QuestionView: FC<QuestionViewProps> = ({ node, onOptionSelect }) => {
           >
             <Button
               variant="outline"
-              className="h-auto min-h-[140px] p-6 flex flex-col items-center gap-3 text-center justify-center transition-all duration-300 hover:bg-gray-50 hover:border-gray-400 hover:shadow-lg dark:hover:bg-gray-900 dark:hover:border-gray-600 w-full group border-gray-200 dark:border-gray-800"
+              className="h-auto min-h-[120px] p-4 flex flex-col items-center gap-3 text-center justify-center transition-all duration-300 hover:bg-gray-50 hover:border-gray-400 hover:shadow-lg dark:hover:bg-gray-900 dark:hover:border-gray-600 w-full group border-gray-200 dark:border-gray-800"
               onClick={() => onOptionSelect(option.text)}
             >
               {option.icon && (
-                <div className="text-4xl mb-2 group-hover:scale-110 transition-transform duration-300 filter grayscale group-hover:grayscale-0">
+                <div className="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300">
                   {option.icon}
                 </div>
               )}
-              <span className="font-semibold text-lg text-center leading-tight text-gray-900 dark:text-gray-100">
+              <span className="font-semibold text-base text-center leading-tight text-gray-900 dark:text-gray-100 break-words">
                 {option.text}
               </span>
-              <div className="mt-2 text-xs text-gray-500 dark:text-gray-400 opacity-0 group-hover:opacity-100 transition-all duration-300">
+              <div className="mt-1 text-xs text-gray-500 dark:text-gray-400 opacity-0 group-hover:opacity-100 transition-all duration-300">
                 Select this path →
               </div>
             </Button>
@@ -276,14 +276,16 @@ const QuestionView: FC<QuestionViewProps> = ({ node, onOptionSelect }) => {
       </div>
     </motion.div>
   );
-};
+});
+
+QuestionView.displayName = 'QuestionView';
 
 interface ResultViewProps {
   result: TechStackResult;
   pathSummary: string[];
 }
 
-const ResultView: FC<ResultViewProps> = ({ result }) => (
+const ResultView: FC<ResultViewProps> = memo(({ result }) => (
   <motion.div
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
@@ -297,13 +299,13 @@ const ResultView: FC<ResultViewProps> = ({ result }) => (
         animate={{ scale: 1 }}
         transition={{ delay: 0.2, duration: 0.3 }}
       >
-        <div className="text-4xl filter grayscale">🎯</div>
+        <div className="text-4xl">🎯</div>
         <Badge variant="outline" className="bg-gray-50 text-gray-700 border-gray-300 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700">
           Perfect Match Found
         </Badge>
       </motion.div>
       <motion.h2 
-        className="text-4xl font-bold tracking-tight mb-3 text-black dark:text-white"
+        className="text-3xl font-bold tracking-tight mb-3 text-black dark:text-white"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.3 }}
@@ -311,7 +313,7 @@ const ResultView: FC<ResultViewProps> = ({ result }) => (
         {result.name}
       </motion.h2>
       <motion.p 
-        className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg"
+        className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-base"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4, duration: 0.3 }}
@@ -369,7 +371,7 @@ const ResultView: FC<ResultViewProps> = ({ result }) => (
                     transition={{ delay: 0.8 + index * 0.1, duration: 0.3 }}
                   >
                     <CheckCircle className="h-4 w-4 text-gray-600 dark:text-gray-400 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-gray-700 dark:text-gray-300">{reason}</span>
+                    <span className="text-sm text-gray-700 dark:text-gray-300 break-words">{reason}</span>
                   </motion.li>
                 ))}
               </ul>
@@ -397,4 +399,6 @@ const ResultView: FC<ResultViewProps> = ({ result }) => (
       </motion.div>
     </div>
   </motion.div>
-);
+));
+
+ResultView.displayName = 'ResultView';

@@ -1,43 +1,71 @@
 import { TreeNode, TreeStructure, TreeOption } from './tree-types';
 
+const nodeCache = new Map<string, TreeNode>();
+const optionCache = new Map<string, Map<string, string>>();
+
 /**
  * Walk the tree to find the next node based on the selected option text
+ * Optimized with caching for better performance
  */
 export function walkTree(
   tree: TreeStructure,
   currentId: string,
   optionText: string
 ): string | null {
-  const node = tree[currentId];
+  const cacheKey = `${currentId}:${optionText}`;
   
-  if (!node) {
-    console.error(`Node with id "${currentId}" not found in tree`);
-    return null;
+  if (!optionCache.has(currentId)) {
+    const node = tree[currentId];
+    
+    if (!node) {
+      if (process.env.NODE_ENV === 'development') {
+        console.error(`Node with id "${currentId}" not found in tree`);
+      }
+      return null;
+    }
+    
+    if (!node.options) {
+      if (process.env.NODE_ENV === 'development') {
+        console.error(`Node "${currentId}" has no options`);
+      }
+      return null;
+    }
+    
+    const optionMap = new Map<string, string>();
+    node.options.forEach(option => {
+      optionMap.set(option.text, option.nextId);
+    });
+    
+    optionCache.set(currentId, optionMap);
   }
   
-  if (!node.options) {
-    console.error(`Node "${currentId}" has no options`);
-    return null;
-  }
+  const nodeOptions = optionCache.get(currentId)!;
+  const nextId = nodeOptions.get(optionText);
   
-  const selectedOption = node.options.find(option => option.text === optionText);
-  
-  if (!selectedOption) {
+  if (!nextId && process.env.NODE_ENV === 'development') {
     console.error(`Option "${optionText}" not found in node "${currentId}"`);
-    return null;
   }
   
-  return selectedOption.nextId;
+  return nextId || null;
 }
 
 /**
- * Get the current node from the tree
+ * Get the current node from the tree with caching
  */
 export function getCurrentNode(
   tree: TreeStructure,
   nodeId: string
 ): TreeNode | null {
-  return tree[nodeId] || null;
+  if (nodeCache.has(nodeId)) {
+    return nodeCache.get(nodeId)!;
+  }
+  
+  const node = tree[nodeId] || null;
+  if (node) {
+    nodeCache.set(nodeId, node);
+  }
+  
+  return node;
 }
 
 /**
@@ -115,16 +143,36 @@ export function validateTree(tree: TreeStructure): {
   };
 }
 
+const pathSummaryCache = new Map<string, string[]>();
+
 /**
- * Generate a path summary from history
+ * Generate a path summary from history with memoization
  */
 export function generatePathSummary(
   tree: TreeStructure,
   history: { nodeId: string; answer: string }[]
 ): string[] {
-  return history.map(({ nodeId, answer }) => {
-    const node = tree[nodeId];
+  const cacheKey = history.map(h => `${h.nodeId}:${h.answer}`).join('|');
+  
+  if (pathSummaryCache.has(cacheKey)) {
+    return pathSummaryCache.get(cacheKey)!;
+  }
+  
+  const summary = history.map(({ nodeId, answer }) => {
+    const node = getCurrentNode(tree, nodeId);
     if (!node || !node.question) return '';
     return `${node.question} → ${answer}`;
   }).filter(Boolean);
+  
+  pathSummaryCache.set(cacheKey, summary);
+  return summary;
+}
+
+/**
+ * Clear all caches - useful for development or when tree changes
+ */
+export function clearCaches(): void {
+  nodeCache.clear();
+  optionCache.clear();
+  pathSummaryCache.clear();
 }
