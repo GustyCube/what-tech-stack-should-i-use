@@ -5,6 +5,9 @@
   "scripts": {
     "dev": "next dev -p 9002",
     "build": "next build",
+    "workers:build": "next build",
+    "workers:dev": "wrangler dev",
+    "workers:deploy": "npm run workers:build && wrangler deploy",
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit"
@@ -59,6 +62,7 @@
     "eslint-config-next": "^15.4.3",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.25.1"
   }
 }
