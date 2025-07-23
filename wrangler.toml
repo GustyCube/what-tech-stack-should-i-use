@@ -3,5 +3,6 @@ main = "worker.js"
 compatibility_date = "2024-01-01"
 compatibility_flags = ["nodejs_compat"]
 
+# Go back to legacy Workers Sites which actually works
 [site]
 bucket = "./out"
