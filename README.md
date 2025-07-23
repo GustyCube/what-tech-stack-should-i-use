@@ -1,9 +1,9 @@
 # 🎯 WTSSIU - What Tech Stack Should I Use?
 
-[![GitHub Stars](https://img.shields.io/github/stars/your-username/wtssiu?style=for-the-badge&logo=github&logoColor=white)](https://github.com/your-username/wtssiu/stargazers)
-[![GitHub Release](https://img.shields.io/github/v/release/your-username/wtssiu?style=for-the-badge&logo=github&logoColor=white)](https://github.com/your-username/wtssiu/releases)
-[![GitHub Issues](https://img.shields.io/github/issues/your-username/wtssiu?style=for-the-badge&logo=github&logoColor=white)](https://github.com/your-username/wtssiu/issues)
-[![CI Status](https://img.shields.io/github/actions/workflow/status/your-username/wtssiu/ci.yml?style=for-the-badge&logo=github-actions&logoColor=white&label=CI&color=success)](https://github.com/your-username/wtssiu/actions)
+[![GitHub Stars](https://img.shields.io/github/stars/GustyCube/what-tech-stack-should-i-use?style=for-the-badge&logo=github&logoColor=white)](https://github.com/GustyCube/what-tech-stack-should-i-use/stargazers)
+[![GitHub Release](https://img.shields.io/github/v/release/GustyCube/what-tech-stack-should-i-use?style=for-the-badge&logo=github&logoColor=white)](https://github.com/GustyCube/what-tech-stack-should-i-use/releases)
+[![GitHub Issues](https://img.shields.io/github/issues/GustyCube/what-tech-stack-should-i-use?style=for-the-badge&logo=github&logoColor=white)](https://github.com/GustyCube/what-tech-stack-should-i-use/issues)
+[![CI Status](https://img.shields.io/github/actions/workflow/status/GustyCube/what-tech-stack-should-i-use/ci.yml?style=for-the-badge&logo=github-actions&logoColor=white&label=CI&color=success)](https://github.com/GustyCube/what-tech-stack-should-i-use/actions)
 [![Next.js](https://img.shields.io/badge/Next.js-15.3.3-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript&logoColor=white)](https://typescriptlang.org)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.1-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
@@ -78,8 +78,8 @@ Instead of asking "Frontend, Backend, or Full-stack?" first, WTSSIU might ask:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/wtssiu.git
-cd wtssiu
+git clone https://github.com/GustyCube/what-tech-stack-should-i-use.git
+cd what-tech-stack-should-i-use
 
 # Install dependencies
 npm install
