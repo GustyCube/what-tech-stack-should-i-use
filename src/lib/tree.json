@@ -1,0 +1,2613 @@
+{
+  "start": {
+    "id": "start",
+    "question": "What's your primary focus?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Frontend/User Interface", "icon": "🎨", "nextId": "frontend_category" },
+      { "text": "Backend/Server", "icon": "⚙️", "nextId": "backend_category" },
+      { "text": "Full Applications", "icon": "🔧", "nextId": "application_category" },
+      { "text": "Specialized/Emerging", "icon": "🚀", "nextId": "specialized_category" }
+    ]
+  },
+  "frontend_category": {
+    "id": "frontend_category",
+    "question": "What type of frontend are you building?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Web Application", "icon": "🌐", "nextId": "web_type" },
+      { "text": "Mobile App UI", "icon": "📱", "nextId": "mobile_platform" },
+      { "text": "Desktop App UI", "icon": "🖥️", "nextId": "desktop_platform" },
+      { "text": "Game Interface", "icon": "🎮", "nextId": "game_platform" }
+    ]
+  },
+  "backend_category": {
+    "id": "backend_category",
+    "question": "What type of backend service?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "REST API", "icon": "🔌", "nextId": "api_type" },
+      { "text": "Database & Storage", "icon": "🗄️", "nextId": "data_engineering_type" },
+      { "text": "DevOps & Infrastructure", "icon": "🏗️", "nextId": "devops_type" },
+      { "text": "Real-time Services", "icon": "⚡", "nextId": "realtime_backend" }
+    ]
+  },
+  "application_category": {
+    "id": "application_category", 
+    "question": "What type of complete application?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Web Application", "icon": "🌐", "nextId": "web_type" },
+      { "text": "Mobile Application", "icon": "📱", "nextId": "mobile_platform" },
+      { "text": "Desktop Application", "icon": "🖥️", "nextId": "desktop_platform" },
+      { "text": "Game", "icon": "🎮", "nextId": "game_platform" }
+    ]
+  },
+  "specialized_category": {
+    "id": "specialized_category",
+    "question": "Which specialized technology?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "AI/Machine Learning", "icon": "🤖", "nextId": "ai_ml_type" },
+      { "text": "Blockchain/Web3", "icon": "⛓️", "nextId": "blockchain_type" },
+      { "text": "IoT/Embedded", "icon": "🌐", "nextId": "iot_type" },
+      { "text": "Data Science", "icon": "📊", "nextId": "data_science_focus" }
+    ]
+  },
+  "realtime_backend": {
+    "id": "realtime_backend",
+    "question": "What type of real-time service?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Chat/Messaging", "icon": "💬", "nextId": "chat_framework" },
+      { "text": "Live Updates/Notifications", "icon": "🔔", "nextId": "websocket_result" },
+      { "text": "Real-time Analytics", "icon": "📈", "nextId": "streaming_platform" },
+      { "text": "Multiplayer Gaming", "icon": "🎮", "nextId": "game_server_result" }
+    ]
+  },
+  "data_science_focus": {
+    "id": "data_science_focus",
+    "question": "What's your data science focus?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Data Analysis & Visualization", "icon": "📊", "nextId": "jupyter_pandas_result" },
+      { "text": "Machine Learning Models", "icon": "🧠", "nextId": "ml_framework" },
+      { "text": "Big Data Processing", "icon": "🏗️", "nextId": "data_engineering_type" },
+      { "text": "Business Intelligence", "icon": "💼", "nextId": "bi_tool" }
+    ]
+  },
+  "web_type": {
+    "id": "web_type",
+    "question": "What's your web app's main purpose?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Interactive Web App", "icon": "⚡", "nextId": "interactive_web" },
+      { "text": "Content & Publishing", "icon": "📝", "nextId": "content_web" },
+      { "text": "Business & Commerce", "icon": "💼", "nextId": "business_web" },
+      { "text": "Static & Simple", "icon": "📄", "nextId": "static_type" }
+    ]
+  },
+  "interactive_web": {
+    "id": "interactive_web",
+    "question": "What kind of interactive web app?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Single Page App (SPA)", "icon": "⚡", "nextId": "spa_framework" },
+      { "text": "Full-stack Application", "icon": "🔧", "nextId": "fullstack_complexity" },
+      { "text": "Progressive Web App (PWA)", "icon": "📱", "nextId": "pwa_framework" },
+      { "text": "Real-time App", "icon": "🔄", "nextId": "realtime_web" }
+    ]
+  },
+  "content_web": {
+    "id": "content_web",
+    "question": "What type of content platform?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Blog/News Site", "icon": "📰", "nextId": "blog_platform" },
+      { "text": "Content Management System", "icon": "📝", "nextId": "cms_type" },
+      { "text": "Documentation Site", "icon": "📚", "nextId": "docs_platform" },
+      { "text": "Portfolio/Showcase", "icon": "🎨", "nextId": "portfolio_platform" }
+    ]
+  },
+  "business_web": {
+    "id": "business_web",
+    "question": "What type of business application?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "E-commerce Store", "icon": "🛒", "nextId": "ecommerce_scale" },
+      { "text": "Dashboard/Analytics", "icon": "📊", "nextId": "dashboard_type" },
+      { "text": "Social Platform", "icon": "👥", "nextId": "social_type" },
+      { "text": "SaaS Application", "icon": "☁️", "nextId": "saas_stack" }
+    ]
+  },
+  "realtime_web": {
+    "id": "realtime_web",
+    "question": "What kind of real-time features?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Chat/Messaging", "icon": "💬", "nextId": "chat_framework" },
+      { "text": "Live Collaboration", "icon": "👥", "nextId": "collaboration_stack" },
+      { "text": "Live Data/Streaming", "icon": "📡", "nextId": "realtime_data_stack" },
+      { "text": "Gaming/Interactive", "icon": "🎮", "nextId": "web_game_framework" }
+    ]
+  },
+  "desktop_platform": {
+    "id": "desktop_platform",
+    "question": "Which desktop platforms do you need to support?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Cross-platform", "icon": "🔄", "nextId": "cross_platform_desktop" },
+      { "text": "Windows Only", "icon": "🪟", "nextId": "windows_desktop" },
+      { "text": "macOS Only", "icon": "🍎", "nextId": "macos_desktop" },
+      { "text": "Linux Only", "icon": "🐧", "nextId": "linux_desktop" }
+    ]
+  },
+  "cross_platform_desktop": {
+    "id": "cross_platform_desktop",
+    "question": "What's your preferred technology for cross-platform desktop?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Electron", "icon": "⚛️", "nextId": "electron_result" },
+      { "text": "Tauri", "icon": "🦀", "nextId": "tauri_result" },
+      { "text": "Qt", "icon": "🔷", "nextId": "qt_result" },
+      { "text": "Flutter Desktop", "icon": "🦋", "nextId": "flutter_desktop_result" },
+      { "text": ".NET MAUI", "icon": "🔵", "nextId": "maui_result" }
+    ]
+  },
+  "windows_desktop": {
+    "id": "windows_desktop",
+    "question": "Which Windows development approach?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "WPF", "icon": "🪟", "nextId": "wpf_result" },
+      { "text": "WinUI 3", "icon": "🪟", "nextId": "winui_result" },
+      { "text": "UWP", "icon": "🪟", "nextId": "uwp_result" }
+    ]
+  },
+  "macos_desktop": {
+    "id": "macos_desktop",
+    "question": "Which macOS development approach?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "SwiftUI", "icon": "🍎", "nextId": "swiftui_mac_result" },
+      { "text": "AppKit", "icon": "🍎", "nextId": "appkit_result" },
+      { "text": "Catalyst", "icon": "🍎", "nextId": "catalyst_result" }
+    ]
+  },
+  "linux_desktop": {
+    "id": "linux_desktop",
+    "question": "Which Linux GUI framework?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "GTK", "icon": "🐧", "nextId": "gtk_result" },
+      { "text": "Qt", "icon": "🐧", "nextId": "qt_linux_result" },
+      { "text": "Tkinter", "icon": "🐍", "nextId": "tkinter_result" }
+    ]
+  },
+  "ai_ml_type": {
+    "id": "ai_ml_type",
+    "question": "What type of AI/ML project?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Machine Learning Model", "icon": "🧠", "nextId": "ml_framework" },
+      { "text": "Deep Learning", "icon": "🔬", "nextId": "dl_framework" },
+      { "text": "Natural Language Processing", "icon": "💬", "nextId": "nlp_framework" },
+      { "text": "Computer Vision", "icon": "👁️", "nextId": "cv_framework" },
+      { "text": "MLOps/Model Deployment", "icon": "🚀", "nextId": "mlops_platform" },
+      { "text": "Data Science/Analytics", "icon": "📈", "nextId": "data_science_tools" },
+      { "text": "LLM Application", "icon": "🤖", "nextId": "llm_framework" }
+    ]
+  },
+  "ml_framework": {
+    "id": "ml_framework",
+    "question": "Which ML framework do you prefer?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Scikit-learn", "icon": "🐍", "nextId": "sklearn_result" },
+      { "text": "XGBoost", "icon": "🌳", "nextId": "xgboost_result" },
+      { "text": "LightGBM", "icon": "💡", "nextId": "lightgbm_result" },
+      { "text": "CatBoost", "icon": "🐱", "nextId": "catboost_result" }
+    ]
+  },
+  "dl_framework": {
+    "id": "dl_framework",
+    "question": "Which deep learning framework?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "PyTorch", "icon": "🔥", "nextId": "pytorch_result" },
+      { "text": "TensorFlow", "icon": "🧮", "nextId": "tensorflow_result" },
+      { "text": "JAX", "icon": "⚡", "nextId": "jax_result" },
+      { "text": "Keras", "icon": "🧩", "nextId": "keras_result" }
+    ]
+  },
+  "nlp_framework": {
+    "id": "nlp_framework",
+    "question": "What's your NLP focus?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Transformers/BERT", "icon": "🤗", "nextId": "huggingface_result" },
+      { "text": "spaCy", "icon": "🌶️", "nextId": "spacy_result" },
+      { "text": "NLTK", "icon": "📚", "nextId": "nltk_result" },
+      { "text": "OpenAI GPT", "icon": "🔮", "nextId": "openai_result" }
+    ]
+  },
+  "cv_framework": {
+    "id": "cv_framework",
+    "question": "Which computer vision approach?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "OpenCV", "icon": "👁️", "nextId": "opencv_result" },
+      { "text": "YOLO", "icon": "🎯", "nextId": "yolo_result" },
+      { "text": "MediaPipe", "icon": "📹", "nextId": "mediapipe_result" },
+      { "text": "Detectron2", "icon": "🔍", "nextId": "detectron_result" }
+    ]
+  },
+  "blockchain_type": {
+    "id": "blockchain_type",
+    "question": "What type of blockchain project?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Smart Contracts", "icon": "📜", "nextId": "smart_contract_platform" },
+      { "text": "DeFi Application", "icon": "💰", "nextId": "defi_platform" },
+      { "text": "NFT Platform", "icon": "🖼️", "nextId": "nft_platform" },
+      { "text": "dApp Frontend", "icon": "🌐", "nextId": "dapp_framework" },
+      { "text": "Blockchain Infrastructure", "icon": "⛓️", "nextId": "blockchain_infra" }
+    ]
+  },
+  "smart_contract_platform": {
+    "id": "smart_contract_platform",
+    "question": "Which blockchain platform?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Ethereum", "icon": "💎", "nextId": "ethereum_framework" },
+      { "text": "Solana", "icon": "☀️", "nextId": "solana_result" },
+      { "text": "Polygon", "icon": "🔷", "nextId": "polygon_result" },
+      { "text": "Binance Smart Chain", "icon": "🟡", "nextId": "bsc_result" },
+      { "text": "Avalanche", "icon": "🏔️", "nextId": "avalanche_result" }
+    ]
+  },
+  "ethereum_framework": {
+    "id": "ethereum_framework",
+    "question": "Which Ethereum development framework?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Hardhat", "icon": "⛑️", "nextId": "hardhat_result" },
+      { "text": "Foundry", "icon": "🔨", "nextId": "foundry_result" },
+      { "text": "Truffle", "icon": "🍄", "nextId": "truffle_result" }
+    ]
+  },
+  "devops_type": {
+    "id": "devops_type",
+    "question": "What DevOps area are you focusing on?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "CI/CD Pipeline", "icon": "🔄", "nextId": "cicd_platform" },
+      { "text": "Infrastructure as Code", "icon": "🏗️", "nextId": "iac_tool" },
+      { "text": "Container Orchestration", "icon": "🐳", "nextId": "container_platform" },
+      { "text": "Monitoring & Observability", "icon": "📊", "nextId": "monitoring_stack" },
+      { "text": "Cloud Platform", "icon": "☁️", "nextId": "cloud_provider" },
+      { "text": "Configuration Management", "icon": "⚙️", "nextId": "config_management" }
+    ]
+  },
+  "cicd_platform": {
+    "id": "cicd_platform",
+    "question": "Which CI/CD platform?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "GitHub Actions", "icon": "🐙", "nextId": "github_actions_result" },
+      { "text": "GitLab CI", "icon": "🦊", "nextId": "gitlab_ci_result" },
+      { "text": "Jenkins", "icon": "👨‍💼", "nextId": "jenkins_result" },
+      { "text": "Azure DevOps", "icon": "🔵", "nextId": "azure_devops_result" },
+      { "text": "CircleCI", "icon": "⭕", "nextId": "circleci_result" }
+    ]
+  },
+  "iac_tool": {
+    "id": "iac_tool",
+    "question": "Which Infrastructure as Code tool?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Terraform", "icon": "🏗️", "nextId": "terraform_result" },
+      { "text": "AWS CloudFormation", "icon": "☁️", "nextId": "cloudformation_result" },
+      { "text": "Pulumi", "icon": "🚀", "nextId": "pulumi_result" },
+      { "text": "Ansible", "icon": "🎭", "nextId": "ansible_result" }
+    ]
+  },
+  "data_engineering_type": {
+    "id": "data_engineering_type",
+    "question": "What type of data engineering project?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Data Pipeline", "icon": "🔄", "nextId": "data_pipeline_tool" },
+      { "text": "Data Warehouse", "icon": "🏪", "nextId": "data_warehouse_platform" },
+      { "text": "Real-time Processing", "icon": "⚡", "nextId": "streaming_platform" },
+      { "text": "ETL/ELT", "icon": "🔄", "nextId": "etl_tool" },
+      { "text": "Data Lake", "icon": "🏞️", "nextId": "data_lake_platform" }
+    ]
+  },
+  "data_pipeline_tool": {
+    "id": "data_pipeline_tool",
+    "question": "Which data pipeline tool?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Apache Airflow", "icon": "🌊", "nextId": "airflow_result" },
+      { "text": "Prefect", "icon": "🔮", "nextId": "prefect_result" },
+      { "text": "Dagster", "icon": "💎", "nextId": "dagster_result" },
+      { "text": "Luigi", "icon": "🍄", "nextId": "luigi_result" }
+    ]
+  },
+  "iot_type": {
+    "id": "iot_type",
+    "question": "What type of IoT project?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Embedded System", "icon": "🔧", "nextId": "embedded_platform" },
+      { "text": "IoT Cloud Platform", "icon": "☁️", "nextId": "iot_cloud" },
+      { "text": "Edge Computing", "icon": "🎯", "nextId": "edge_platform" },
+      { "text": "Home Automation", "icon": "🏠", "nextId": "home_automation" }
+    ]
+  },
+  "embedded_platform": {
+    "id": "embedded_platform",
+    "question": "Which embedded platform?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Arduino", "icon": "🤖", "nextId": "arduino_result" },
+      { "text": "Raspberry Pi", "icon": "🥧", "nextId": "raspberry_pi_result" },
+      { "text": "ESP32", "icon": "📡", "nextId": "esp32_result" },
+      { "text": "STM32", "icon": "🔵", "nextId": "stm32_result" }
+    ]
+  },
+  "pwa_framework": {
+    "id": "pwa_framework",
+    "question": "Which PWA framework?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Workbox", "icon": "🧰", "nextId": "workbox_result" },
+      { "text": "PWA Builder", "icon": "🔨", "nextId": "pwa_builder_result" },
+      { "text": "Ionic PWA", "icon": "⚡", "nextId": "ionic_pwa_result" }
+    ]
+  },
+  "cms_type": {
+    "id": "cms_type",
+    "question": "What type of CMS?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Headless CMS", "icon": "🔌", "nextId": "headless_cms" },
+      { "text": "Traditional CMS", "icon": "📝", "nextId": "traditional_cms" },
+      { "text": "E-commerce CMS", "icon": "🛒", "nextId": "ecommerce_cms" }
+    ]
+  },
+  "headless_cms": {
+    "id": "headless_cms",
+    "question": "Which headless CMS?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Strapi", "icon": "🚀", "nextId": "strapi_result" },
+      { "text": "Sanity", "icon": "🧘", "nextId": "sanity_result" },
+      { "text": "Contentful", "icon": "📦", "nextId": "contentful_result" },
+      { "text": "Ghost", "icon": "👻", "nextId": "ghost_result" }
+    ]
+  },
+  "dashboard_type": {
+    "id": "dashboard_type",
+    "question": "What type of dashboard?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Business Intelligence", "icon": "📊", "nextId": "bi_tool" },
+      { "text": "Admin Dashboard", "icon": "👨‍💼", "nextId": "admin_framework" },
+      { "text": "Analytics Dashboard", "icon": "📈", "nextId": "analytics_framework" }
+    ]
+  },
+  "social_type": {
+    "id": "social_type",
+    "question": "What type of social platform?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Social Network", "icon": "👥", "nextId": "social_framework" },
+      { "text": "Chat Application", "icon": "💬", "nextId": "chat_framework" },
+      { "text": "Forum/Community", "icon": "🏛️", "nextId": "forum_platform" }
+    ]
+  },
+  "fullstack_complexity": {
+    "id": "fullstack_complexity",
+    "question": "What's your experience level and team size?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Solo Developer/Beginner", "icon": "👤", "nextId": "solo_fullstack" },
+      { "text": "Small Team (2-5)", "icon": "👥", "nextId": "small_team_fullstack" },
+      { "text": "Large Team/Enterprise", "icon": "🏢", "nextId": "enterprise_fullstack" },
+      { "text": "Experienced/Custom", "icon": "🎯", "nextId": "custom_fullstack" }
+    ]
+  },
+  "solo_fullstack": {
+    "id": "solo_fullstack",
+    "question": "What's your preferred language for learning/productivity?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "JavaScript (Easy start)", "icon": "📜", "nextId": "js_solo_stack" },
+      { "text": "Python (Versatile)", "icon": "🐍", "nextId": "python_solo_stack" },
+      { "text": "PHP (Web-focused)", "icon": "🐘", "nextId": "php_fullstack" },
+      { "text": "No preference", "icon": "🤷", "nextId": "beginner_friendly_stack" }
+    ]
+  },
+  "small_team_fullstack": {
+    "id": "small_team_fullstack",
+    "question": "What's your team's main strength?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Frontend/JavaScript", "icon": "⚛️", "nextId": "js_fullstack_type" },
+      { "text": "Backend/API Development", "icon": "⚙️", "nextId": "backend_focused_stack" },
+      { "text": "Mixed Experience", "icon": "🔄", "nextId": "balanced_stack" },
+      { "text": "Data/ML Background", "icon": "🧠", "nextId": "python_fullstack" }
+    ]
+  },
+  "enterprise_fullstack": {
+    "id": "enterprise_fullstack",
+    "question": "What are your enterprise requirements?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Maximum Scalability", "icon": "📈", "nextId": "java_fullstack" },
+      { "text": "Microsoft Ecosystem", "icon": "🔵", "nextId": "dotnet_fullstack" },
+      { "text": "Performance Critical", "icon": "🚀", "nextId": "performance_stack" },
+      { "text": "Legacy Integration", "icon": "🔧", "nextId": "enterprise_integration_stack" }
+    ]
+  },
+  "custom_fullstack": {
+    "id": "custom_fullstack",
+    "question": "What's your preferred programming paradigm?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Modern/TypeScript", "icon": "🔷", "nextId": "js_fullstack_type" },
+      { "text": "Memory Safe/Fast", "icon": "🦀", "nextId": "rust_fullstack" },
+      { "text": "Simple/Concurrent", "icon": "🐹", "nextId": "go_fullstack" },
+      { "text": "Functional/Ruby", "icon": "💎", "nextId": "ruby_fullstack" }
+    ]
+  },
+  "js_fullstack_type": {
+    "id": "js_fullstack_type",
+    "question": "What features are most important?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Type Safety", "icon": "🛡️", "nextId": "t3_stack_result" },
+      { "text": "Real-time Updates", "icon": "🔄", "nextId": "nextjs_supabase_result" },
+      { "text": "Server-Side Rendering", "icon": "🖥️", "nextId": "nextjs_result" },
+      { "text": "Simplicity", "icon": "✨", "nextId": "mern_result" }
+    ]
+  },
+  "python_fullstack": {
+    "id": "python_fullstack",
+    "question": "Which Python framework do you prefer?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Django (Batteries Included)", "icon": "🔋", "nextId": "django_react_result" },
+      { "text": "FastAPI (Modern & Fast)", "icon": "⚡", "nextId": "fastapi_result" },
+      { "text": "Flask (Minimal)", "icon": "🧪", "nextId": "flask_result" }
+    ]
+  },
+  "java_fullstack": {
+    "id": "java_fullstack",
+    "question": "Which Java framework suits your needs?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Spring Boot", "icon": "🌱", "nextId": "springboot_result" },
+      { "text": "Quarkus", "icon": "🚀", "nextId": "quarkus_result" }
+    ]
+  },
+  "php_fullstack": {
+    "id": "php_fullstack",
+    "question": "Which PHP framework do you prefer?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Laravel", "icon": "🎨", "nextId": "laravel_result" },
+      { "text": "Symfony", "icon": "🎼", "nextId": "symfony_result" }
+    ]
+  },
+  "dotnet_fullstack": {
+    "id": "dotnet_fullstack",
+    "question": "Which .NET framework?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "ASP.NET Core", "icon": "🔵", "nextId": "aspnet_core_result" },
+      { "text": "Blazor", "icon": "⚡", "nextId": "blazor_result" },
+      { "text": ".NET MAUI", "icon": "📱", "nextId": "maui_result" }
+    ]
+  },
+  "ruby_fullstack": {
+    "id": "ruby_fullstack",
+    "question": "Which Ruby framework?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Ruby on Rails", "icon": "🚂", "nextId": "rails_result" },
+      { "text": "Sinatra", "icon": "🎤", "nextId": "sinatra_result" },
+      { "text": "Hanami", "icon": "🌸", "nextId": "hanami_result" }
+    ]
+  },
+  "go_fullstack": {
+    "id": "go_fullstack",
+    "question": "Which Go web framework?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Gin", "icon": "🍸", "nextId": "gin_result" },
+      { "text": "Echo", "icon": "📢", "nextId": "echo_result" },
+      { "text": "Fiber", "icon": "🕸️", "nextId": "fiber_result" },
+      { "text": "Buffalo", "icon": "🦬", "nextId": "buffalo_result" }
+    ]
+  },
+  "rust_fullstack": {
+    "id": "rust_fullstack",
+    "question": "Which Rust web framework?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Actix Web", "icon": "🦀", "nextId": "actix_result" },
+      { "text": "Rocket", "icon": "🚀", "nextId": "rocket_result" },
+      { "text": "Warp", "icon": "🌊", "nextId": "warp_result" },
+      { "text": "Axum", "icon": "⚡", "nextId": "axum_result" }
+    ]
+  },
+  "static_type": {
+    "id": "static_type",
+    "question": "What's your main priority?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Maximum Performance", "icon": "🚀", "nextId": "astro_result" },
+      { "text": "Easy Content Management", "icon": "📝", "nextId": "gatsby_result" },
+      { "text": "Simple & Fast", "icon": "⚡", "nextId": "eleventy_result" }
+    ]
+  },
+  "spa_framework": {
+    "id": "spa_framework",
+    "question": "Which frontend framework do you prefer?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "React", "icon": "⚛️", "nextId": "react_spa_result" },
+      { "text": "Vue", "icon": "🟢", "nextId": "vue_result" },
+      { "text": "Angular", "icon": "🔺", "nextId": "angular_result" },
+      { "text": "Svelte", "icon": "🔥", "nextId": "svelte_result" }
+    ]
+  },
+  "ecommerce_scale": {
+    "id": "ecommerce_scale",
+    "question": "What's the scale of your e-commerce project?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Small Business", "icon": "🏪", "nextId": "shopify_result" },
+      { "text": "Custom Solution", "icon": "🛠️", "nextId": "medusa_result" },
+      { "text": "Enterprise", "icon": "🏢", "nextId": "commercetools_result" }
+    ]
+  },
+  "mobile_platform": {
+    "id": "mobile_platform",
+    "question": "Which platforms do you need to support?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "iOS & Android", "icon": "📱", "nextId": "cross_platform_type" },
+      { "text": "iOS Only", "icon": "🍎", "nextId": "swiftui_result" },
+      { "text": "Android Only", "icon": "🤖", "nextId": "kotlin_result" }
+    ]
+  },
+  "cross_platform_type": {
+    "id": "cross_platform_type",
+    "question": "What's your development preference?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "React Native", "icon": "⚛️", "nextId": "react_native_result" },
+      { "text": "Flutter", "icon": "🦋", "nextId": "flutter_result" },
+      { "text": "Ionic", "icon": "⚡", "nextId": "ionic_result" },
+      { "text": "Xamarin", "icon": "🔵", "nextId": "xamarin_result" },
+      { "text": "Unity Mobile", "icon": "🎮", "nextId": "unity_mobile_result" },
+      { "text": "Cordova/PhoneGap", "icon": "📱", "nextId": "cordova_result" },
+      { "text": "NativeScript", "icon": "📱", "nextId": "nativescript_result" }
+    ]
+  },
+  "game_platform": {
+    "id": "game_platform",
+    "question": "What type of game are you building?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "2D Game", "icon": "🎯", "nextId": "game_2d_engine" },
+      { "text": "3D Game", "icon": "🎪", "nextId": "game_3d_engine" },
+      { "text": "Web Game", "icon": "🌐", "nextId": "web_game_framework" },
+      { "text": "VR/AR Game", "icon": "🥽", "nextId": "vr_ar_platform" },
+      { "text": "Console Game", "icon": "🎮", "nextId": "console_platform" },
+      { "text": "Indie Game", "icon": "🎨", "nextId": "indie_game_engine" }
+    ]
+  },
+  "game_2d_engine": {
+    "id": "game_2d_engine",
+    "question": "Choose your 2D game engine:",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Unity", "icon": "🎮", "nextId": "unity_result" },
+      { "text": "Godot", "icon": "🤖", "nextId": "godot_result" },
+      { "text": "GameMaker", "icon": "🔨", "nextId": "gamemaker_result" }
+    ]
+  },
+  "game_3d_engine": {
+    "id": "game_3d_engine",
+    "question": "Choose your 3D game engine:",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Unreal Engine", "icon": "🎬", "nextId": "unreal_result" },
+      { "text": "Unity", "icon": "🎮", "nextId": "unity_result" },
+      { "text": "Godot", "icon": "🤖", "nextId": "godot_result" }
+    ]
+  },
+  "web_game_framework": {
+    "id": "web_game_framework",
+    "question": "Which web game framework?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Phaser", "icon": "🎯", "nextId": "phaser_result" },
+      { "text": "Three.js", "icon": "🔺", "nextId": "threejs_result" },
+      { "text": "Babylon.js", "icon": "🏛️", "nextId": "babylonjs_result" },
+      { "text": "PlayCanvas", "icon": "🎮", "nextId": "playcanvas_result" },
+      { "text": "A-Frame", "icon": "🥽", "nextId": "aframe_result" }
+    ]
+  },
+  "vr_ar_platform": {
+    "id": "vr_ar_platform",
+    "question": "Which VR/AR platform?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Meta Quest", "icon": "🥽", "nextId": "meta_quest_result" },
+      { "text": "SteamVR", "icon": "🎮", "nextId": "steamvr_result" },
+      { "text": "ARKit (iOS)", "icon": "🍎", "nextId": "arkit_result" },
+      { "text": "ARCore (Android)", "icon": "🤖", "nextId": "arcore_result" },
+      { "text": "WebXR", "icon": "🌐", "nextId": "webxr_result" }
+    ]
+  },
+  "console_platform": {
+    "id": "console_platform",
+    "question": "Which console platform?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "PlayStation", "icon": "🎮", "nextId": "playstation_result" },
+      { "text": "Xbox", "icon": "🎮", "nextId": "xbox_result" },
+      { "text": "Nintendo Switch", "icon": "🎮", "nextId": "nintendo_result" },
+      { "text": "Steam Deck", "icon": "🎮", "nextId": "steam_deck_result" }
+    ]
+  },
+  "indie_game_engine": {
+    "id": "indie_game_engine",
+    "question": "Which indie-friendly engine?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Godot", "icon": "🎨", "nextId": "godot_indie_result" },
+      { "text": "Defold", "icon": "🔥", "nextId": "defold_result" },
+      { "text": "LÖVE", "icon": "❤️", "nextId": "love_result" },
+      { "text": "Construct 3", "icon": "🔧", "nextId": "construct_result" }
+    ]
+  },
+  "api_type": {
+    "id": "api_type",
+    "question": "What kind of API/backend service?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "REST API", "icon": "🔌", "nextId": "rest_api_lang" },
+      { "text": "GraphQL API", "icon": "◈", "nextId": "graphql_stack" },
+      { "text": "Microservices", "icon": "🔲", "nextId": "microservices_stack" },
+      { "text": "Serverless Functions", "icon": "☁️", "nextId": "serverless_result" }
+    ]
+  },
+  "rest_api_lang": {
+    "id": "rest_api_lang",
+    "question": "Preferred language for REST API?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Node.js", "icon": "🟢", "nextId": "node_api_result" },
+      { "text": "Python", "icon": "🐍", "nextId": "fastapi_result" },
+      { "text": "Go", "icon": "🐹", "nextId": "go_result" },
+      { "text": "Rust", "icon": "🦀", "nextId": "rust_api_result" }
+    ]
+  },
+  "graphql_stack": {
+    "id": "graphql_stack",
+    "question": "Choose your GraphQL stack:",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Apollo Server", "icon": "🚀", "nextId": "apollo_result" },
+      { "text": "Hasura", "icon": "⚡", "nextId": "hasura_result" },
+      { "text": "Prisma + GraphQL", "icon": "💎", "nextId": "prisma_graphql_result" }
+    ]
+  },
+  "microservices_stack": {
+    "id": "microservices_stack",
+    "question": "Microservices orchestration preference?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Kubernetes", "icon": "☸️", "nextId": "kubernetes_result" },
+      { "text": "Docker Swarm", "icon": "🐳", "nextId": "docker_swarm_result" },
+      { "text": "AWS ECS", "icon": "☁️", "nextId": "aws_ecs_result" }
+    ]
+  },
+  "t3_stack_result": {
+    "id": "t3_stack_result",
+    "result": {
+      "name": "T3 Stack",
+      "description": "Full-stack TypeScript with Next.js, tRPC, Prisma, and Tailwind CSS",
+      "url": "https://create.t3.gg",
+      "tags": ["fullstack", "typescript", "nextjs", "trpc", "prisma"],
+      "reasons": ["Type-safe from database to frontend", "Modern developer experience", "Built-in authentication", "Excellent TypeScript support"]
+    }
+  },
+  "nextjs_supabase_result": {
+    "id": "nextjs_supabase_result",
+    "result": {
+      "name": "Next.js + Supabase",
+      "description": "Full-stack React framework with real-time database and authentication",
+      "url": "https://supabase.com",
+      "tags": ["fullstack", "nextjs", "supabase", "realtime", "postgresql"],
+      "reasons": ["Real-time subscriptions", "Built-in auth", "Serverless functions", "PostgreSQL database"]
+    }
+  },
+  "nextjs_result": {
+    "id": "nextjs_result",
+    "result": {
+      "name": "Next.js",
+      "description": "The React framework for production with SSR/SSG capabilities",
+      "url": "https://nextjs.org",
+      "tags": ["frontend", "react", "nextjs", "ssr", "ssg"],
+      "reasons": ["Server-side rendering", "Static generation", "API routes", "Image optimization", "Great developer experience"]
+    }
+  },
+  "mern_result": {
+    "id": "mern_result",
+    "result": {
+      "name": "MERN Stack",
+      "description": "MongoDB, Express, React, and Node.js for full-stack JavaScript",
+      "url": "https://www.mongodb.com/mern-stack",
+      "tags": ["fullstack", "mongodb", "express", "react", "nodejs"],
+      "reasons": ["JavaScript everywhere", "Large community", "Flexible schema with MongoDB", "Quick prototyping"]
+    }
+  },
+  "django_react_result": {
+    "id": "django_react_result",
+    "result": {
+      "name": "Django + React",
+      "description": "Python backend with React frontend for robust full-stack applications",
+      "url": "https://www.djangoproject.com",
+      "tags": ["fullstack", "python", "django", "react", "postgresql"],
+      "reasons": ["Mature ecosystem", "Excellent admin panel", "Strong security features", "Great for data-heavy apps"]
+    }
+  },
+  "fastapi_result": {
+    "id": "fastapi_result",
+    "result": {
+      "name": "FastAPI",
+      "description": "Modern, fast Python web framework for building APIs",
+      "url": "https://fastapi.tiangolo.com",
+      "tags": ["backend", "python", "fastapi", "api", "async"],
+      "reasons": ["Automatic API documentation", "Type hints support", "High performance", "Modern Python features"]
+    }
+  },
+  "flask_result": {
+    "id": "flask_result",
+    "result": {
+      "name": "Flask",
+      "description": "Lightweight Python web framework for flexible applications",
+      "url": "https://flask.palletsprojects.com",
+      "tags": ["backend", "python", "flask", "minimal"],
+      "reasons": ["Minimal and flexible", "Easy to learn", "Large ecosystem", "Great for small to medium projects"]
+    }
+  },
+  "springboot_result": {
+    "id": "springboot_result",
+    "result": {
+      "name": "Spring Boot",
+      "description": "Java framework for building enterprise-grade applications",
+      "url": "https://spring.io/projects/spring-boot",
+      "tags": ["backend", "java", "spring", "enterprise"],
+      "reasons": ["Enterprise-ready", "Comprehensive ecosystem", "Strong security", "Microservices support"]
+    }
+  },
+  "quarkus_result": {
+    "id": "quarkus_result",
+    "result": {
+      "name": "Quarkus",
+      "description": "Kubernetes-native Java framework for cloud applications",
+      "url": "https://quarkus.io",
+      "tags": ["backend", "java", "quarkus", "cloud-native"],
+      "reasons": ["Fast startup time", "Low memory footprint", "GraalVM support", "Kubernetes-native"]
+    }
+  },
+  "laravel_result": {
+    "id": "laravel_result",
+    "result": {
+      "name": "Laravel",
+      "description": "The PHP framework for web artisans",
+      "url": "https://laravel.com",
+      "tags": ["fullstack", "php", "laravel", "mysql"],
+      "reasons": ["Elegant syntax", "Built-in features", "Great documentation", "Active community", "Excellent ORM"]
+    }
+  },
+  "symfony_result": {
+    "id": "symfony_result",
+    "result": {
+      "name": "Symfony",
+      "description": "High-performance PHP framework for complex applications",
+      "url": "https://symfony.com",
+      "tags": ["backend", "php", "symfony", "enterprise"],
+      "reasons": ["Component-based", "High performance", "Enterprise features", "Excellent documentation"]
+    }
+  },
+  "astro_result": {
+    "id": "astro_result",
+    "result": {
+      "name": "Astro",
+      "description": "Static site generator with islands architecture for blazing-fast websites",
+      "url": "https://astro.build",
+      "tags": ["frontend", "static", "astro", "performance"],
+      "reasons": ["Fastest performance", "Zero JS by default", "Multi-framework support", "Perfect for content sites"]
+    }
+  },
+  "gatsby_result": {
+    "id": "gatsby_result",
+    "result": {
+      "name": "Gatsby",
+      "description": "React-based static site generator with GraphQL",
+      "url": "https://www.gatsbyjs.com",
+      "tags": ["frontend", "static", "gatsby", "react", "graphql"],
+      "reasons": ["Rich plugin ecosystem", "GraphQL data layer", "Image optimization", "Great for blogs"]
+    }
+  },
+  "eleventy_result": {
+    "id": "eleventy_result",
+    "result": {
+      "name": "Eleventy (11ty)",
+      "description": "Simple static site generator with zero client-side JavaScript",
+      "url": "https://www.11ty.dev",
+      "tags": ["frontend", "static", "11ty", "simple"],
+      "reasons": ["Zero config", "Fast builds", "Template flexibility", "No client-side JS required"]
+    }
+  },
+  "react_spa_result": {
+    "id": "react_spa_result",
+    "result": {
+      "name": "React + Vite",
+      "description": "Modern React setup with lightning-fast build tooling",
+      "url": "https://vitejs.dev",
+      "tags": ["frontend", "react", "vite", "spa"],
+      "reasons": ["Fast development", "Great ecosystem", "Component libraries", "Industry standard"]
+    }
+  },
+  "vue_result": {
+    "id": "vue_result",
+    "result": {
+      "name": "Vue 3 + Nuxt",
+      "description": "Progressive framework with intuitive API and great developer experience",
+      "url": "https://nuxt.com",
+      "tags": ["frontend", "vue", "nuxt", "spa"],
+      "reasons": ["Gentle learning curve", "Great documentation", "Composition API", "Built-in features"]
+    }
+  },
+  "angular_result": {
+    "id": "angular_result",
+    "result": {
+      "name": "Angular",
+      "description": "Full-featured framework for large-scale applications",
+      "url": "https://angular.io",
+      "tags": ["frontend", "angular", "typescript", "enterprise"],
+      "reasons": ["Full framework", "TypeScript first", "Enterprise ready", "Comprehensive tooling"]
+    }
+  },
+  "svelte_result": {
+    "id": "svelte_result",
+    "result": {
+      "name": "SvelteKit",
+      "description": "Compiler-based framework with excellent performance",
+      "url": "https://kit.svelte.dev",
+      "tags": ["frontend", "svelte", "sveltekit", "compiler"],
+      "reasons": ["No virtual DOM", "Smaller bundle sizes", "Great performance", "Simple syntax"]
+    }
+  },
+  "shopify_result": {
+    "id": "shopify_result",
+    "result": {
+      "name": "Shopify",
+      "description": "Complete e-commerce platform for small to medium businesses",
+      "url": "https://www.shopify.com",
+      "tags": ["ecommerce", "shopify", "saas"],
+      "reasons": ["Quick setup", "Built-in features", "App ecosystem", "Payment processing"]
+    }
+  },
+  "medusa_result": {
+    "id": "medusa_result",
+    "result": {
+      "name": "Medusa.js",
+      "description": "Open-source headless commerce platform",
+      "url": "https://medusajs.com",
+      "tags": ["ecommerce", "nodejs", "headless", "api"],
+      "reasons": ["Headless architecture", "Customizable", "Open source", "Modern stack"]
+    }
+  },
+  "commercetools_result": {
+    "id": "commercetools_result",
+    "result": {
+      "name": "commercetools",
+      "description": "Enterprise-grade headless commerce platform",
+      "url": "https://commercetools.com",
+      "tags": ["ecommerce", "enterprise", "headless", "api"],
+      "reasons": ["Enterprise scale", "API-first", "Microservices", "Global infrastructure"]
+    }
+  },
+  "react_native_result": {
+    "id": "react_native_result",
+    "result": {
+      "name": "React Native + Expo",
+      "description": "Cross-platform mobile development with React",
+      "url": "https://expo.dev",
+      "tags": ["mobile", "react-native", "expo", "cross-platform"],
+      "reasons": ["Single codebase", "Fast development", "OTA updates", "Large ecosystem"]
+    }
+  },
+  "flutter_result": {
+    "id": "flutter_result",
+    "result": {
+      "name": "Flutter",
+      "description": "Google's UI toolkit for cross-platform development",
+      "url": "https://flutter.dev",
+      "tags": ["mobile", "flutter", "dart", "cross-platform"],
+      "reasons": ["Native performance", "Beautiful UI", "Hot reload", "Single codebase"]
+    }
+  },
+  "ionic_result": {
+    "id": "ionic_result",
+    "result": {
+      "name": "Ionic",
+      "description": "Cross-platform mobile apps with web technologies",
+      "url": "https://ionicframework.com",
+      "tags": ["mobile", "ionic", "angular", "cross-platform"],
+      "reasons": ["Web technologies", "Native plugins", "PWA support", "Enterprise features"]
+    }
+  },
+  "swiftui_result": {
+    "id": "swiftui_result",
+    "result": {
+      "name": "SwiftUI",
+      "description": "Apple's modern framework for building native iOS applications",
+      "url": "https://developer.apple.com/xcode/swiftui/",
+      "tags": ["mobile", "ios", "swift", "native"],
+      "reasons": ["Native performance", "Apple ecosystem", "Modern declarative syntax", "Best iOS experience"]
+    }
+  },
+  "kotlin_result": {
+    "id": "kotlin_result",
+    "result": {
+      "name": "Kotlin + Jetpack Compose",
+      "description": "Modern Android development with declarative UI",
+      "url": "https://developer.android.com/jetpack/compose",
+      "tags": ["mobile", "android", "kotlin", "native"],
+      "reasons": ["Native performance", "Google support", "Modern toolkit", "Type-safe"]
+    }
+  },
+  "unity_result": {
+    "id": "unity_result",
+    "result": {
+      "name": "Unity",
+      "description": "Popular game engine for 2D and 3D games",
+      "url": "https://unity.com",
+      "tags": ["game", "unity", "c#", "cross-platform"],
+      "reasons": ["Large community", "Asset store", "Cross-platform", "Visual editor"]
+    }
+  },
+  "godot_result": {
+    "id": "godot_result",
+    "result": {
+      "name": "Godot",
+      "description": "Open-source game engine with GDScript",
+      "url": "https://godotengine.org",
+      "tags": ["game", "godot", "open-source"],
+      "reasons": ["Open source", "No royalties", "Lightweight", "Built-in scripting"]
+    }
+  },
+  "gamemaker_result": {
+    "id": "gamemaker_result",
+    "result": {
+      "name": "GameMaker Studio",
+      "description": "2D game engine with visual scripting",
+      "url": "https://gamemaker.io",
+      "tags": ["game", "2d", "gamemaker"],
+      "reasons": ["Easy to learn", "Visual scripting", "2D focused", "Quick prototyping"]
+    }
+  },
+  "unreal_result": {
+    "id": "unreal_result",
+    "result": {
+      "name": "Unreal Engine",
+      "description": "AAA game engine with cutting-edge graphics",
+      "url": "https://www.unrealengine.com",
+      "tags": ["game", "3d", "unreal", "c++"],
+      "reasons": ["AAA quality", "Blueprint visual scripting", "Photorealistic graphics", "Free until $1M revenue"]
+    }
+  },
+  "web_game_result": {
+    "id": "web_game_result",
+    "result": {
+      "name": "Phaser",
+      "description": "HTML5 game framework for web games",
+      "url": "https://phaser.io",
+      "tags": ["game", "web", "javascript", "html5"],
+      "reasons": ["Web native", "JavaScript based", "Large community", "Extensive examples"]
+    }
+  },
+  "node_api_result": {
+    "id": "node_api_result",
+    "result": {
+      "name": "Node.js + Fastify",
+      "description": "High-performance API framework for Node.js",
+      "url": "https://www.fastify.io",
+      "tags": ["backend", "nodejs", "fastify", "api"],
+      "reasons": ["High performance", "Schema validation", "Plugin ecosystem", "TypeScript support"]
+    }
+  },
+  "go_result": {
+    "id": "go_result",
+    "result": {
+      "name": "Go + Gin",
+      "description": "Fast and minimalist web framework for Go",
+      "url": "https://gin-gonic.com",
+      "tags": ["backend", "go", "gin", "api"],
+      "reasons": ["High performance", "Simple syntax", "Built-in concurrency", "Single binary deployment"]
+    }
+  },
+  "rust_api_result": {
+    "id": "rust_api_result",
+    "result": {
+      "name": "Rust + Actix Web",
+      "description": "Blazing fast web framework for Rust",
+      "url": "https://actix.rs",
+      "tags": ["backend", "rust", "actix", "api"],
+      "reasons": ["Memory safety", "Extreme performance", "Zero-cost abstractions", "Modern tooling"]
+    }
+  },
+  "apollo_result": {
+    "id": "apollo_result",
+    "result": {
+      "name": "Apollo GraphQL",
+      "description": "Industry-standard GraphQL implementation",
+      "url": "https://www.apollographql.com",
+      "tags": ["backend", "graphql", "apollo", "nodejs"],
+      "reasons": ["GraphQL standard", "Client libraries", "Developer tools", "Federation support"]
+    }
+  },
+  "hasura_result": {
+    "id": "hasura_result",
+    "result": {
+      "name": "Hasura",
+      "description": "Instant GraphQL APIs over PostgreSQL",
+      "url": "https://hasura.io",
+      "tags": ["backend", "graphql", "hasura", "postgresql"],
+      "reasons": ["Instant APIs", "Real-time subscriptions", "Authorization built-in", "No code required"]
+    }
+  },
+  "prisma_graphql_result": {
+    "id": "prisma_graphql_result",
+    "result": {
+      "name": "Prisma + GraphQL Yoga",
+      "description": "Type-safe database access with GraphQL",
+      "url": "https://www.prisma.io",
+      "tags": ["backend", "graphql", "prisma", "typescript"],
+      "reasons": ["Type-safe database", "Auto-generated types", "Database agnostic", "Great DX"]
+    }
+  },
+  "kubernetes_result": {
+    "id": "kubernetes_result",
+    "result": {
+      "name": "Kubernetes",
+      "description": "Container orchestration for microservices",
+      "url": "https://kubernetes.io",
+      "tags": ["infrastructure", "kubernetes", "microservices", "containers"],
+      "reasons": ["Industry standard", "Auto-scaling", "Self-healing", "Cloud agnostic"]
+    }
+  },
+  "docker_swarm_result": {
+    "id": "docker_swarm_result",
+    "result": {
+      "name": "Docker Swarm",
+      "description": "Simple container orchestration",
+      "url": "https://docs.docker.com/engine/swarm/",
+      "tags": ["infrastructure", "docker", "swarm", "containers"],
+      "reasons": ["Simple setup", "Docker native", "Built-in load balancing", "Good for small scale"]
+    }
+  },
+  "aws_ecs_result": {
+    "id": "aws_ecs_result",
+    "result": {
+      "name": "AWS ECS",
+      "description": "Amazon's container orchestration service",
+      "url": "https://aws.amazon.com/ecs/",
+      "tags": ["infrastructure", "aws", "ecs", "containers"],
+      "reasons": ["AWS integration", "Serverless option", "Managed service", "Auto-scaling"]
+    }
+  },
+  "serverless_result": {
+    "id": "serverless_result",
+    "result": {
+      "name": "Vercel Functions",
+      "description": "Serverless functions with zero configuration",
+      "url": "https://vercel.com/docs/functions",
+      "tags": ["serverless", "vercel", "functions", "api"],
+      "reasons": ["Zero config", "Auto-scaling", "Global edge network", "Great DX"]
+    }
+  },
+  "electron_result": {
+    "id": "electron_result",
+    "result": {
+      "name": "Electron",
+      "description": "Cross-platform desktop apps with web technologies",
+      "url": "https://www.electronjs.org",
+      "tags": ["desktop", "electron", "javascript", "cross-platform"],
+      "reasons": ["Web technologies", "Large ecosystem", "Active community", "VS Code is built with it"]
+    }
+  },
+  "tauri_result": {
+    "id": "tauri_result",
+    "result": {
+      "name": "Tauri",
+      "description": "Rust-based desktop framework with smaller bundles",
+      "url": "https://tauri.app",
+      "tags": ["desktop", "rust", "tauri", "performance"],
+      "reasons": ["Smaller bundle size", "Better security", "Rust performance", "Modern architecture"]
+    }
+  },
+  "qt_result": {
+    "id": "qt_result",
+    "result": {
+      "name": "Qt",
+      "description": "Native cross-platform C++ framework",
+      "url": "https://www.qt.io",
+      "tags": ["desktop", "c++", "qt", "native"],
+      "reasons": ["Native performance", "Professional look", "Enterprise support", "Multi-platform"]
+    }
+  },
+  "flutter_desktop_result": {
+    "id": "flutter_desktop_result",
+    "result": {
+      "name": "Flutter Desktop",
+      "description": "Google's UI toolkit for desktop applications",
+      "url": "https://docs.flutter.dev/desktop",
+      "tags": ["desktop", "flutter", "dart", "cross-platform"],
+      "reasons": ["Single codebase", "Beautiful UI", "Google backing", "Growing ecosystem"]
+    }
+  },
+  "maui_result": {
+    "id": "maui_result",
+    "result": {
+      "name": ".NET MAUI",
+      "description": "Microsoft's cross-platform framework",
+      "url": "https://dotnet.microsoft.com/apps/maui",
+      "tags": ["desktop", "mobile", "dotnet", "microsoft"],
+      "reasons": ["Microsoft ecosystem", "Single project", "Native performance", "Xamarin evolution"]
+    }
+  },
+  "wpf_result": {
+    "id": "wpf_result",
+    "result": {
+      "name": "WPF",
+      "description": "Windows Presentation Foundation for rich Windows apps",
+      "url": "https://docs.microsoft.com/wpf/",
+      "tags": ["desktop", "windows", "wpf", "dotnet"],
+      "reasons": ["Rich UI", "Data binding", "MVVM pattern", "Windows integration"]
+    }
+  },
+  "winui_result": {
+    "id": "winui_result",
+    "result": {
+      "name": "WinUI 3",
+      "description": "Modern Windows UI framework",
+      "url": "https://docs.microsoft.com/windows/apps/winui/",
+      "tags": ["desktop", "windows", "winui", "modern"],
+      "reasons": ["Modern design", "Fluent Design", "Performance", "Windows 11 style"]
+    }
+  },
+  "uwp_result": {
+    "id": "uwp_result",
+    "result": {
+      "name": "UWP",
+      "description": "Universal Windows Platform applications",
+      "url": "https://docs.microsoft.com/windows/uwp/",
+      "tags": ["desktop", "windows", "uwp", "universal"],
+      "reasons": ["Store distribution", "Modern APIs", "Security", "Universal apps"]
+    }
+  },
+  "swiftui_mac_result": {
+    "id": "swiftui_mac_result",
+    "result": {
+      "name": "SwiftUI for macOS",
+      "description": "Apple's modern UI framework for Mac applications",
+      "url": "https://developer.apple.com/xcode/swiftui/",
+      "tags": ["desktop", "macos", "swift", "apple"],
+      "reasons": ["Apple ecosystem", "Modern syntax", "Performance", "iOS code sharing"]
+    }
+  },
+  "appkit_result": {
+    "id": "appkit_result",
+    "result": {
+      "name": "AppKit",
+      "description": "Traditional macOS application framework",
+      "url": "https://developer.apple.com/documentation/appkit",
+      "tags": ["desktop", "macos", "appkit", "traditional"],
+      "reasons": ["Full macOS features", "Mature framework", "Objective-C/Swift", "Native controls"]
+    }
+  },
+  "catalyst_result": {
+    "id": "catalyst_result",
+    "result": {
+      "name": "Mac Catalyst",
+      "description": "Bring iPad apps to Mac",
+      "url": "https://developer.apple.com/mac-catalyst/",
+      "tags": ["desktop", "macos", "catalyst", "ios"],
+      "reasons": ["Code reuse", "iPad to Mac", "Apple ecosystem", "Quick porting"]
+    }
+  },
+  "gtk_result": {
+    "id": "gtk_result",
+    "result": {
+      "name": "GTK",
+      "description": "GNOME's cross-platform GUI toolkit",
+      "url": "https://www.gtk.org",
+      "tags": ["desktop", "linux", "gtk", "gnome"],
+      "reasons": ["Linux native", "Open source", "GNOME integration", "Multiple languages"]
+    }
+  },
+  "qt_linux_result": {
+    "id": "qt_linux_result",
+    "result": {
+      "name": "Qt for Linux",
+      "description": "Cross-platform framework optimized for Linux",
+      "url": "https://www.qt.io",
+      "tags": ["desktop", "linux", "qt", "c++"],
+      "reasons": ["Native look", "KDE integration", "Professional", "Cross-platform"]
+    }
+  },
+  "tkinter_result": {
+    "id": "tkinter_result",
+    "result": {
+      "name": "Tkinter",
+      "description": "Python's standard GUI library",
+      "url": "https://docs.python.org/3/library/tkinter.html",
+      "tags": ["desktop", "python", "tkinter", "gui"],
+      "reasons": ["Built-in Python", "Simple to learn", "Cross-platform", "Quick prototyping"]
+    }
+  },
+  "sklearn_result": {
+    "id": "sklearn_result",
+    "result": {
+      "name": "Scikit-learn",
+      "description": "Machine learning library for Python",
+      "url": "https://scikit-learn.org",
+      "tags": ["ml", "python", "sklearn", "algorithms"],
+      "reasons": ["Comprehensive algorithms", "Great documentation", "Easy to use", "Industry standard"]
+    }
+  },
+  "xgboost_result": {
+    "id": "xgboost_result",
+    "result": {
+      "name": "XGBoost",
+      "description": "Gradient boosting framework",
+      "url": "https://xgboost.readthedocs.io",
+      "tags": ["ml", "gradient-boosting", "xgboost", "performance"],
+      "reasons": ["High performance", "Kaggle winner", "Feature importance", "Handles missing values"]
+    }
+  },
+  "lightgbm_result": {
+    "id": "lightgbm_result",
+    "result": {
+      "name": "LightGBM",
+      "description": "Fast gradient boosting framework",
+      "url": "https://lightgbm.readthedocs.io",
+      "tags": ["ml", "gradient-boosting", "lightgbm", "fast"],
+      "reasons": ["Faster training", "Lower memory usage", "High accuracy", "GPU support"]
+    }
+  },
+  "catboost_result": {
+    "id": "catboost_result",
+    "result": {
+      "name": "CatBoost",
+      "description": "Gradient boosting with categorical features",
+      "url": "https://catboost.ai",
+      "tags": ["ml", "gradient-boosting", "catboost", "categorical"],
+      "reasons": ["Handles categories well", "No preprocessing needed", "Great defaults", "GPU support"]
+    }
+  },
+  "pytorch_result": {
+    "id": "pytorch_result",
+    "result": {
+      "name": "PyTorch",
+      "description": "Dynamic neural network framework",
+      "url": "https://pytorch.org",
+      "tags": ["dl", "pytorch", "neural-networks", "research"],
+      "reasons": ["Dynamic graphs", "Research friendly", "Great debugging", "Strong ecosystem"]
+    }
+  },
+  "tensorflow_result": {
+    "id": "tensorflow_result",
+    "result": {
+      "name": "TensorFlow",
+      "description": "End-to-end machine learning platform",
+      "url": "https://www.tensorflow.org",
+      "tags": ["dl", "tensorflow", "neural-networks", "production"],
+      "reasons": ["Production ready", "Large ecosystem", "Mobile deployment", "Google backing"]
+    }
+  },
+  "jax_result": {
+    "id": "jax_result",
+    "result": {
+      "name": "JAX",
+      "description": "NumPy-compatible library for machine learning research",
+      "url": "https://jax.readthedocs.io",
+      "tags": ["dl", "jax", "numpy", "research"],
+      "reasons": ["Functional programming", "JIT compilation", "Automatic differentiation", "Research focused"]
+    }
+  },
+  "keras_result": {
+    "id": "keras_result",
+    "result": {
+      "name": "Keras",
+      "description": "High-level neural networks API",
+      "url": "https://keras.io",
+      "tags": ["dl", "keras", "high-level", "tensorflow"],
+      "reasons": ["Easy to use", "Rapid prototyping", "TensorFlow integration", "Great for beginners"]
+    }
+  },
+  "huggingface_result": {
+    "id": "huggingface_result",
+    "result": {
+      "name": "Hugging Face Transformers",
+      "description": "State-of-the-art NLP models",
+      "url": "https://huggingface.co/transformers/",
+      "tags": ["nlp", "transformers", "bert", "gpt"],
+      "reasons": ["Pre-trained models", "Easy fine-tuning", "Model hub", "Community driven"]
+    }
+  },
+  "spacy_result": {
+    "id": "spacy_result",
+    "result": {
+      "name": "spaCy",
+      "description": "Industrial-strength NLP library",
+      "url": "https://spacy.io",
+      "tags": ["nlp", "spacy", "industrial", "python"],
+      "reasons": ["Production ready", "Fast processing", "Pre-trained models", "Easy integration"]
+    }
+  },
+  "nltk_result": {
+    "id": "nltk_result",
+    "result": {
+      "name": "NLTK",
+      "description": "Natural Language Toolkit for Python",
+      "url": "https://www.nltk.org",
+      "tags": ["nlp", "nltk", "academic", "python"],
+      "reasons": ["Educational focused", "Comprehensive", "Academia standard", "Great for learning"]
+    }
+  },
+  "openai_result": {
+    "id": "openai_result",
+    "result": {
+      "name": "OpenAI API",
+      "description": "GPT and other AI models via API",
+      "url": "https://openai.com/api/",
+      "tags": ["ai", "gpt", "api", "language-models"],
+      "reasons": ["State-of-the-art models", "Easy integration", "Powerful capabilities", "Well documented"]
+    }
+  },
+  "opencv_result": {
+    "id": "opencv_result",
+    "result": {
+      "name": "OpenCV",
+      "description": "Computer vision and image processing library",
+      "url": "https://opencv.org",
+      "tags": ["cv", "opencv", "image-processing", "vision"],
+      "reasons": ["Comprehensive CV tools", "Multi-language", "Real-time processing", "Industry standard"]
+    }
+  },
+  "yolo_result": {
+    "id": "yolo_result",
+    "result": {
+      "name": "YOLO",
+      "description": "Real-time object detection",
+      "url": "https://ultralytics.com/yolo",
+      "tags": ["cv", "yolo", "object-detection", "real-time"],
+      "reasons": ["Real-time detection", "High accuracy", "Easy to use", "Active development"]
+    }
+  },
+  "mediapipe_result": {
+    "id": "mediapipe_result",
+    "result": {
+      "name": "MediaPipe",
+      "description": "Google's framework for perception tasks",
+      "url": "https://mediapipe.dev",
+      "tags": ["cv", "mediapipe", "google", "perception"],
+      "reasons": ["Pre-built solutions", "Cross-platform", "Google quality", "Mobile optimized"]
+    }
+  },
+  "detectron_result": {
+    "id": "detectron_result",
+    "result": {
+      "name": "Detectron2",
+      "description": "Facebook's object detection platform",
+      "url": "https://detectron2.readthedocs.io",
+      "tags": ["cv", "detectron", "object-detection", "facebook"],
+      "reasons": ["Research quality", "Modular design", "State-of-the-art models", "PyTorch based"]
+    }
+  },
+  "solana_result": {
+    "id": "solana_result",
+    "result": {
+      "name": "Solana",
+      "description": "High-performance blockchain for dApps",
+      "url": "https://solana.com",
+      "tags": ["blockchain", "solana", "rust", "high-performance"],
+      "reasons": ["Fast transactions", "Low fees", "Rust ecosystem", "Growing adoption"]
+    }
+  },
+  "polygon_result": {
+    "id": "polygon_result",
+    "result": {
+      "name": "Polygon",
+      "description": "Ethereum Layer 2 scaling solution",
+      "url": "https://polygon.technology",
+      "tags": ["blockchain", "polygon", "ethereum", "layer2"],
+      "reasons": ["Ethereum compatibility", "Lower fees", "Faster transactions", "Strong ecosystem"]
+    }
+  },
+  "bsc_result": {
+    "id": "bsc_result",
+    "result": {
+      "name": "Binance Smart Chain",
+      "description": "EVM-compatible blockchain",
+      "url": "https://www.bnbchain.org",
+      "tags": ["blockchain", "bsc", "binance", "evm"],
+      "reasons": ["Low fees", "Fast transactions", "Binance ecosystem", "EVM compatible"]
+    }
+  },
+  "avalanche_result": {
+    "id": "avalanche_result",
+    "result": {
+      "name": "Avalanche",
+      "description": "Platform for decentralized applications",
+      "url": "https://www.avax.network",
+      "tags": ["blockchain", "avalanche", "subnets", "interoperability"],
+      "reasons": ["Sub-second finality", "Subnet customization", "EVM compatible", "Eco-friendly"]
+    }
+  },
+  "hardhat_result": {
+    "id": "hardhat_result",
+    "result": {
+      "name": "Hardhat",
+      "description": "Ethereum development environment",
+      "url": "https://hardhat.org",
+      "tags": ["ethereum", "hardhat", "development", "solidity"],
+      "reasons": ["Great debugging", "Plugin ecosystem", "Testing framework", "TypeScript support"]
+    }
+  },
+  "foundry_result": {
+    "id": "foundry_result",
+    "result": {
+      "name": "Foundry",
+      "description": "Fast Ethereum development toolkit",
+      "url": "https://getfoundry.sh",
+      "tags": ["ethereum", "foundry", "rust", "fast"],
+      "reasons": ["Extremely fast", "Rust-based", "Native Solidity testing", "Modern tooling"]
+    }
+  },
+  "truffle_result": {
+    "id": "truffle_result",
+    "result": {
+      "name": "Truffle Suite",
+      "description": "Development framework for Ethereum",
+      "url": "https://trufflesuite.com",
+      "tags": ["ethereum", "truffle", "javascript", "framework"],
+      "reasons": ["Mature ecosystem", "Migration system", "Ganache integration", "Well documented"]
+    }
+  },
+  "github_actions_result": {
+    "id": "github_actions_result",
+    "result": {
+      "name": "GitHub Actions",
+      "description": "CI/CD platform integrated with GitHub",
+      "url": "https://github.com/features/actions",
+      "tags": ["cicd", "github", "automation", "workflows"],
+      "reasons": ["GitHub integration", "Large marketplace", "Free for public repos", "Matrix builds"]
+    }
+  },
+  "gitlab_ci_result": {
+    "id": "gitlab_ci_result",
+    "result": {
+      "name": "GitLab CI/CD",
+      "description": "Built-in CI/CD for GitLab",
+      "url": "https://docs.gitlab.com/ee/ci/",
+      "tags": ["cicd", "gitlab", "integrated", "devops"],
+      "reasons": ["GitLab integration", "Built-in features", "Docker support", "Auto DevOps"]
+    }
+  },
+  "jenkins_result": {
+    "id": "jenkins_result",
+    "result": {
+      "name": "Jenkins",
+      "description": "Open-source automation server",
+      "url": "https://www.jenkins.io",
+      "tags": ["cicd", "jenkins", "automation", "plugins"],
+      "reasons": ["Huge plugin ecosystem", "Self-hosted", "Flexible", "Enterprise proven"]
+    }
+  },
+  "azure_devops_result": {
+    "id": "azure_devops_result",
+    "result": {
+      "name": "Azure DevOps",
+      "description": "Microsoft's DevOps platform",
+      "url": "https://azure.microsoft.com/services/devops/",
+      "tags": ["cicd", "azure", "microsoft", "devops"],
+      "reasons": ["Microsoft ecosystem", "Integrated tools", "Azure integration", "Enterprise features"]
+    }
+  },
+  "circleci_result": {
+    "id": "circleci_result",
+    "result": {
+      "name": "CircleCI",
+      "description": "Cloud-based CI/CD platform",
+      "url": "https://circleci.com",
+      "tags": ["cicd", "cloud", "docker", "parallelism"],
+      "reasons": ["Fast builds", "Docker support", "Parallel jobs", "Easy configuration"]
+    }
+  },
+  "terraform_result": {
+    "id": "terraform_result",
+    "result": {
+      "name": "Terraform",
+      "description": "Infrastructure as code tool",
+      "url": "https://www.terraform.io",
+      "tags": ["iac", "terraform", "hashicorp", "cloud"],
+      "reasons": ["Multi-cloud", "Declarative", "State management", "Large provider ecosystem"]
+    }
+  },
+  "cloudformation_result": {
+    "id": "cloudformation_result",
+    "result": {
+      "name": "AWS CloudFormation",
+      "description": "AWS infrastructure as code service",
+      "url": "https://aws.amazon.com/cloudformation/",
+      "tags": ["iac", "aws", "cloudformation", "json"],
+      "reasons": ["AWS native", "Free service", "Stack management", "AWS integration"]
+    }
+  },
+  "pulumi_result": {
+    "id": "pulumi_result",
+    "result": {
+      "name": "Pulumi",
+      "description": "Modern infrastructure as code",
+      "url": "https://www.pulumi.com",
+      "tags": ["iac", "pulumi", "programming-languages", "modern"],
+      "reasons": ["Real programming languages", "Multi-cloud", "Rich ecosystem", "Great tooling"]
+    }
+  },
+  "ansible_result": {
+    "id": "ansible_result",
+    "result": {
+      "name": "Ansible",
+      "description": "Automation platform for configuration management",
+      "url": "https://www.ansible.com",
+      "tags": ["iac", "ansible", "automation", "configuration"],
+      "reasons": ["Agentless", "YAML syntax", "Large module library", "Enterprise support"]
+    }
+  },
+  "airflow_result": {
+    "id": "airflow_result",
+    "result": {
+      "name": "Apache Airflow",
+      "description": "Platform for workflow orchestration",
+      "url": "https://airflow.apache.org",
+      "tags": ["data-pipeline", "airflow", "workflow", "orchestration"],
+      "reasons": ["Visual workflows", "Rich UI", "Extensible", "Battle-tested"]
+    }
+  },
+  "prefect_result": {
+    "id": "prefect_result",
+    "result": {
+      "name": "Prefect",
+      "description": "Modern workflow orchestration",
+      "url": "https://www.prefect.io",
+      "tags": ["data-pipeline", "prefect", "modern", "python"],
+      "reasons": ["Python-first", "Hybrid execution", "Great observability", "Easy testing"]
+    }
+  },
+  "dagster_result": {
+    "id": "dagster_result",
+    "result": {
+      "name": "Dagster",
+      "description": "Data orchestrator for machine learning",
+      "url": "https://dagster.io",
+      "tags": ["data-pipeline", "dagster", "ml", "orchestration"],
+      "reasons": ["Type system", "Testing built-in", "Asset-centric", "ML focused"]
+    }
+  },
+  "luigi_result": {
+    "id": "luigi_result",
+    "result": {
+      "name": "Luigi",
+      "description": "Python package for building batch jobs",
+      "url": "https://luigi.readthedocs.io",
+      "tags": ["data-pipeline", "luigi", "batch", "python"],
+      "reasons": ["Simple to start", "Dependency resolution", "Visualization", "Spotify created"]
+    }
+  },
+  "arduino_result": {
+    "id": "arduino_result",
+    "result": {
+      "name": "Arduino",
+      "description": "Open-source electronics platform",
+      "url": "https://www.arduino.cc",
+      "tags": ["iot", "arduino", "microcontroller", "beginner"],
+      "reasons": ["Beginner friendly", "Large community", "Many shields", "Easy IDE"]
+    }
+  },
+  "raspberry_pi_result": {
+    "id": "raspberry_pi_result",
+    "result": {
+      "name": "Raspberry Pi",
+      "description": "Small single-board computer",
+      "url": "https://www.raspberrypi.org",
+      "tags": ["iot", "raspberry-pi", "linux", "gpio"],
+      "reasons": ["Full Linux", "GPIO pins", "Great community", "Educational focus"]
+    }
+  },
+  "esp32_result": {
+    "id": "esp32_result",
+    "result": {
+      "name": "ESP32",
+      "description": "Low-power microcontroller with Wi-Fi",
+      "url": "https://www.espressif.com/en/products/socs/esp32",
+      "tags": ["iot", "esp32", "wifi", "bluetooth"],
+      "reasons": ["Built-in Wi-Fi", "Low power", "Arduino compatible", "Affordable"]
+    }
+  },
+  "stm32_result": {
+    "id": "stm32_result",
+    "result": {
+      "name": "STM32",
+      "description": "ARM Cortex-M microcontrollers",
+      "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html",
+      "tags": ["iot", "stm32", "arm", "professional"],
+      "reasons": ["Professional grade", "Low power", "Rich peripherals", "Development tools"]
+    }
+  },
+  "workbox_result": {
+    "id": "workbox_result",
+    "result": {
+      "name": "Workbox",
+      "description": "JavaScript libraries for adding offline support",
+      "url": "https://developers.google.com/web/tools/workbox",
+      "tags": ["pwa", "workbox", "offline", "google"],
+      "reasons": ["Google developed", "Service worker tools", "Caching strategies", "Framework agnostic"]
+    }
+  },
+  "pwa_builder_result": {
+    "id": "pwa_builder_result",
+    "result": {
+      "name": "PWA Builder",
+      "description": "Microsoft's PWA creation tool",
+      "url": "https://www.pwabuilder.com",
+      "tags": ["pwa", "microsoft", "builder", "tools"],
+      "reasons": ["Visual builder", "Microsoft backing", "App store publishing", "Easy setup"]
+    }
+  },
+  "ionic_pwa_result": {
+    "id": "ionic_pwa_result",
+    "result": {
+      "name": "Ionic PWA",
+      "description": "PWA development with Ionic framework",
+      "url": "https://ionicframework.com/pwa",
+      "tags": ["pwa", "ionic", "angular", "mobile"],
+      "reasons": ["Mobile-first", "Component library", "Native features", "Cross-platform"]
+    }
+  },
+  "strapi_result": {
+    "id": "strapi_result",
+    "result": {
+      "name": "Strapi",
+      "description": "Open-source headless CMS",
+      "url": "https://strapi.io",
+      "tags": ["cms", "headless", "strapi", "nodejs"],
+      "reasons": ["Open source", "Customizable", "API-first", "Developer friendly"]
+    }
+  },
+  "sanity_result": {
+    "id": "sanity_result",
+    "result": {
+      "name": "Sanity",
+      "description": "Structured content platform",
+      "url": "https://www.sanity.io",
+      "tags": ["cms", "headless", "sanity", "real-time"],
+      "reasons": ["Real-time collaboration", "Flexible content", "Developer tools", "Global CDN"]
+    }
+  },
+  "contentful_result": {
+    "id": "contentful_result",
+    "result": {
+      "name": "Contentful",
+      "description": "API-first content management platform",
+      "url": "https://www.contentful.com",
+      "tags": ["cms", "headless", "contentful", "api"],
+      "reasons": ["Enterprise ready", "GraphQL API", "CDN delivery", "Multi-language"]
+    }
+  },
+  "ghost_result": {
+    "id": "ghost_result",
+    "result": {
+      "name": "Ghost",
+      "description": "Modern publishing platform",
+      "url": "https://ghost.org",
+      "tags": ["cms", "ghost", "publishing", "blog"],
+      "reasons": ["Publishing focused", "Built-in SEO", "Membership features", "Clean interface"]
+    }
+  },
+  "aspnet_core_result": {
+    "id": "aspnet_core_result",
+    "result": {
+      "name": "ASP.NET Core",
+      "description": "Cross-platform .NET web framework",
+      "url": "https://docs.microsoft.com/aspnet/core/",
+      "tags": ["backend", "dotnet", "aspnet", "microsoft"],
+      "reasons": ["High performance", "Cross-platform", "Built-in DI", "Great tooling"]
+    }
+  },
+  "blazor_result": {
+    "id": "blazor_result",
+    "result": {
+      "name": "Blazor",
+      "description": "Build interactive web UIs with C#",
+      "url": "https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor",
+      "tags": ["frontend", "blazor", "csharp", "webassembly"],
+      "reasons": ["C# everywhere", "Component model", "Server/WASM options", ".NET ecosystem"]
+    }
+  },
+  "rails_result": {
+    "id": "rails_result",
+    "result": {
+      "name": "Ruby on Rails",
+      "description": "Web application framework for Ruby",
+      "url": "https://rubyonrails.org",
+      "tags": ["fullstack", "ruby", "rails", "convention"],
+      "reasons": ["Convention over configuration", "Rapid development", "Active Record", "Mature ecosystem"]
+    }
+  },
+  "sinatra_result": {
+    "id": "sinatra_result",
+    "result": {
+      "name": "Sinatra",
+      "description": "Lightweight Ruby web framework",
+      "url": "http://sinatrarb.com",
+      "tags": ["backend", "ruby", "sinatra", "minimal"],
+      "reasons": ["Minimal and fast", "DSL approach", "Great for APIs", "Easy to learn"]
+    }
+  },
+  "hanami_result": {
+    "id": "hanami_result",
+    "result": {
+      "name": "Hanami",
+      "description": "Modern Ruby web framework",
+      "url": "https://hanamirb.org",
+      "tags": ["fullstack", "ruby", "hanami", "modern"],
+      "reasons": ["Clean architecture", "Functional approach", "Security focused", "Testable"]
+    }
+  },
+  "gin_result": {
+    "id": "gin_result",
+    "result": {
+      "name": "Gin",
+      "description": "HTTP web framework for Go",
+      "url": "https://gin-gonic.com",
+      "tags": ["backend", "go", "gin", "fast"],
+      "reasons": ["High performance", "Minimal memory", "Middleware support", "JSON validation"]
+    }
+  },
+  "echo_result": {
+    "id": "echo_result",
+    "result": {
+      "name": "Echo",
+      "description": "High performance Go web framework",
+      "url": "https://echo.labstack.com",
+      "tags": ["backend", "go", "echo", "performance"],
+      "reasons": ["Optimized router", "Middleware", "Data binding", "Template rendering"]
+    }
+  },
+  "fiber_result": {
+    "id": "fiber_result",
+    "result": {
+      "name": "Fiber",
+      "description": "Express-inspired Go web framework",
+      "url": "https://gofiber.io",
+      "tags": ["backend", "go", "fiber", "express"],
+      "reasons": ["Express-like API", "Zero memory allocation", "Fast HTTP engine", "Rich middleware"]
+    }
+  },
+  "buffalo_result": {
+    "id": "buffalo_result",
+    "result": {
+      "name": "Buffalo",
+      "description": "Rapid web development framework for Go",
+      "url": "https://gobuffalo.io",
+      "tags": ["fullstack", "go", "buffalo", "rapid"],
+      "reasons": ["Full-stack framework", "Code generation", "Hot reloading", "Integrated toolchain"]
+    }
+  },
+  "actix_result": {
+    "id": "actix_result",
+    "result": {
+      "name": "Actix Web",
+      "description": "Powerful web framework for Rust",
+      "url": "https://actix.rs",
+      "tags": ["backend", "rust", "actix", "performance"],
+      "reasons": ["Extreme performance", "Type safety", "Actor system", "Async/await"]
+    }
+  },
+  "rocket_result": {
+    "id": "rocket_result",
+    "result": {
+      "name": "Rocket",
+      "description": "Web framework for Rust",
+      "url": "https://rocket.rs",
+      "tags": ["backend", "rust", "rocket", "type-safe"],
+      "reasons": ["Type-safe", "Easy to use", "Code generation", "Testing support"]
+    }
+  },
+  "warp_result": {
+    "id": "warp_result",
+    "result": {
+      "name": "Warp",
+      "description": "Composable web server framework",
+      "url": "https://github.com/seanmonstar/warp",
+      "tags": ["backend", "rust", "warp", "composable"],
+      "reasons": ["Composable filters", "Async/await", "Performance", "Type safety"]
+    }
+  },
+  "axum_result": {
+    "id": "axum_result",
+    "result": {
+      "name": "Axum",
+      "description": "Ergonomic async web framework for Rust",
+      "url": "https://github.com/tokio-rs/axum",
+      "tags": ["backend", "rust", "axum", "async"],
+      "reasons": ["Tokio ecosystem", "Type-safe", "Extractors", "Tower middleware"]
+    }
+  },
+  "xamarin_result": {
+    "id": "xamarin_result",
+    "result": {
+      "name": "Xamarin",
+      "description": "Cross-platform mobile development with .NET",
+      "url": "https://dotnet.microsoft.com/apps/xamarin",
+      "tags": ["mobile", "xamarin", "dotnet", "cross-platform"],
+      "reasons": ["Native performance", "Shared business logic", "Microsoft ecosystem", "Platform APIs"]
+    }
+  },
+  "unity_mobile_result": {
+    "id": "unity_mobile_result",
+    "result": {
+      "name": "Unity Mobile",
+      "description": "Game engine for mobile game development",
+      "url": "https://unity.com/solutions/mobile",
+      "tags": ["mobile", "unity", "games", "cross-platform"],
+      "reasons": ["Game focused", "Visual scripting", "Asset store", "Cross-platform deployment"]
+    }
+  },
+  "cordova_result": {
+    "id": "cordova_result",
+    "result": {
+      "name": "Apache Cordova",
+      "description": "Mobile apps with HTML, CSS & JS",
+      "url": "https://cordova.apache.org",
+      "tags": ["mobile", "cordova", "hybrid", "web"],
+      "reasons": ["Web technologies", "Plugin ecosystem", "Apache foundation", "Mature platform"]
+    }
+  },
+  "nativescript_result": {
+    "id": "nativescript_result",
+    "result": {
+      "name": "NativeScript",
+      "description": "Native mobile apps with JavaScript",
+      "url": "https://nativescript.org",
+      "tags": ["mobile", "nativescript", "javascript", "native"],
+      "reasons": ["Native performance", "Direct API access", "Angular/Vue support", "Hot module replacement"]
+    }
+  },
+  "phaser_result": {
+    "id": "phaser_result",
+    "result": {
+      "name": "Phaser",
+      "description": "2D game framework for HTML5",
+      "url": "https://phaser.io",
+      "tags": ["game", "web", "phaser", "2d"],
+      "reasons": ["Mature framework", "Great documentation", "Active community", "WebGL renderer"]
+    }
+  },
+  "threejs_result": {
+    "id": "threejs_result",
+    "result": {
+      "name": "Three.js",
+      "description": "3D graphics library for the web",
+      "url": "https://threejs.org",
+      "tags": ["game", "web", "threejs", "3d"],
+      "reasons": ["WebGL abstraction", "Rich examples", "VR/AR support", "Large ecosystem"]
+    }
+  },
+  "babylonjs_result": {
+    "id": "babylonjs_result",
+    "result": {
+      "name": "Babylon.js",
+      "description": "Powerful 3D engine for the web",
+      "url": "https://www.babylonjs.com",
+      "tags": ["game", "web", "babylonjs", "3d"],
+      "reasons": ["Microsoft backing", "Inspector tools", "Physics engines", "Audio engine"]
+    }
+  },
+  "playcanvas_result": {
+    "id": "playcanvas_result",
+    "result": {
+      "name": "PlayCanvas",
+      "description": "Web-first game engine",
+      "url": "https://playcanvas.com",
+      "tags": ["game", "web", "playcanvas", "cloud"],
+      "reasons": ["Cloud-based editor", "Real-time collaboration", "WebGL optimized", "Lightweight"]
+    }
+  },
+  "aframe_result": {
+    "id": "aframe_result",
+    "result": {
+      "name": "A-Frame",
+      "description": "Web framework for building VR experiences",
+      "url": "https://aframe.io",
+      "tags": ["game", "web", "aframe", "vr"],
+      "reasons": ["HTML-based", "VR focused", "Cross-platform VR", "Entity-component system"]
+    }
+  },
+  "meta_quest_result": {
+    "id": "meta_quest_result",
+    "result": {
+      "name": "Meta Quest SDK",
+      "description": "VR development for Meta Quest devices",
+      "url": "https://developer.oculus.com",
+      "tags": ["vr", "meta", "quest", "oculus"],
+      "reasons": ["Popular VR platform", "Standalone devices", "Hand tracking", "Passthrough API"]
+    }
+  },
+  "steamvr_result": {
+    "id": "steamvr_result",
+    "result": {
+      "name": "SteamVR",
+      "description": "VR platform for PC gaming",
+      "url": "https://developer.valvesoftware.com/wiki/SteamVR",
+      "tags": ["vr", "steam", "pc", "valve"],
+      "reasons": ["PC VR standard", "Multiple headsets", "OpenVR", "Steam distribution"]
+    }
+  },
+  "arkit_result": {
+    "id": "arkit_result",
+    "result": {
+      "name": "ARKit",
+      "description": "Apple's augmented reality framework",
+      "url": "https://developer.apple.com/arkit/",
+      "tags": ["ar", "ios", "arkit", "apple"],
+      "reasons": ["iOS native", "Face tracking", "World tracking", "RealityKit integration"]
+    }
+  },
+  "arcore_result": {
+    "id": "arcore_result",
+    "result": {
+      "name": "ARCore",
+      "description": "Google's AR platform for Android",
+      "url": "https://developers.google.com/ar",
+      "tags": ["ar", "android", "arcore", "google"],
+      "reasons": ["Android native", "Motion tracking", "Environmental understanding", "Light estimation"]
+    }
+  },
+  "webxr_result": {
+    "id": "webxr_result",
+    "result": {
+      "name": "WebXR",
+      "description": "VR and AR for the web",
+      "url": "https://immersiveweb.dev",
+      "tags": ["vr", "ar", "web", "webxr"],
+      "reasons": ["Browser-based", "Cross-platform", "No app store", "Progressive enhancement"]
+    }
+  },
+  "mlops_platform": {
+    "id": "mlops_platform",
+    "question": "Which MLOps platform?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "MLflow", "icon": "🚀", "nextId": "mlflow_result" },
+      { "text": "Kubeflow", "icon": "☸️", "nextId": "kubeflow_result" },
+      { "text": "AWS SageMaker", "icon": "☁️", "nextId": "sagemaker_result" }
+    ]
+  },
+  "data_science_tools": {
+    "id": "data_science_tools",
+    "question": "Which data science environment?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "Jupyter + Pandas", "icon": "📊", "nextId": "jupyter_pandas_result" },
+      { "text": "R + RStudio", "icon": "📈", "nextId": "r_studio_result" },
+      { "text": "Databricks", "icon": "⚡", "nextId": "databricks_result" }
+    ]
+  },
+  "llm_framework": {
+    "id": "llm_framework",
+    "question": "Which LLM framework?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "LangChain", "icon": "🔗", "nextId": "langchain_result" },
+      { "text": "LlamaIndex", "icon": "🦙", "nextId": "llamaindex_result" },
+      { "text": "OpenAI API", "icon": "🤖", "nextId": "openai_result" }
+    ]
+  },
+  "mlflow_result": {
+    "id": "mlflow_result",
+    "result": {
+      "name": "MLflow",
+      "description": "Open source platform for ML lifecycle management",
+      "url": "https://mlflow.org",
+      "tags": ["mlops", "python", "tracking", "deployment"],
+      "reasons": ["Model tracking", "Experiment management", "Model registry", "Open source"]
+    }
+  },
+  "kubeflow_result": {
+    "id": "kubeflow_result",
+    "result": {
+      "name": "Kubeflow",
+      "description": "ML workflows on Kubernetes",
+      "url": "https://www.kubeflow.org",
+      "tags": ["mlops", "kubernetes", "pipelines", "scalable"],
+      "reasons": ["Kubernetes native", "Scalable", "Pipeline management", "Multi-framework"]
+    }
+  },
+  "sagemaker_result": {
+    "id": "sagemaker_result",
+    "result": {
+      "name": "AWS SageMaker",
+      "description": "Fully managed ML service",
+      "url": "https://aws.amazon.com/sagemaker/",
+      "tags": ["mlops", "aws", "managed", "cloud"],
+      "reasons": ["Fully managed", "AWS integration", "Auto-scaling", "Built-in algorithms"]
+    }
+  },
+  "jupyter_pandas_result": {
+    "id": "jupyter_pandas_result",
+    "result": {
+      "name": "Jupyter + Pandas",
+      "description": "Interactive data science with Python",
+      "url": "https://jupyter.org",
+      "tags": ["data-science", "python", "jupyter", "pandas"],
+      "reasons": ["Interactive notebooks", "Rich ecosystem", "Visualization tools", "Industry standard"]
+    }
+  },
+  "r_studio_result": {
+    "id": "r_studio_result",
+    "result": {
+      "name": "R + RStudio",
+      "description": "Statistical computing and graphics",
+      "url": "https://www.rstudio.com",
+      "tags": ["data-science", "r", "statistics", "rstudio"],
+      "reasons": ["Statistical focus", "Academic standard", "Visualization", "Package ecosystem"]
+    }
+  },
+  "databricks_result": {
+    "id": "databricks_result",
+    "result": {
+      "name": "Databricks",
+      "description": "Unified analytics platform",
+      "url": "https://databricks.com",
+      "tags": ["data-science", "spark", "cloud", "collaborative"],
+      "reasons": ["Big data", "Collaborative", "Spark integration", "MLflow built-in"]
+    }
+  },
+  "langchain_result": {
+    "id": "langchain_result",
+    "result": {
+      "name": "LangChain",
+      "description": "Framework for developing LLM applications",
+      "url": "https://langchain.com",
+      "tags": ["llm", "python", "framework", "chains"],
+      "reasons": ["Chain composition", "Memory management", "Tool integration", "Active community"]
+    }
+  },
+  "llamaindex_result": {
+    "id": "llamaindex_result",
+    "result": {
+      "name": "LlamaIndex",
+      "description": "Data framework for LLM applications",
+      "url": "https://www.llamaindex.ai",
+      "tags": ["llm", "python", "data", "indexing"],
+      "reasons": ["Data ingestion", "Vector indexing", "Query interface", "Document processing"]
+    }
+  },
+  "defi_platform": {
+    "id": "defi_platform",
+    "result": {
+      "name": "DeFi Development",
+      "description": "Decentralized Finance protocol development",
+      "url": "https://ethereum.org/defi/",
+      "tags": ["defi", "ethereum", "solidity", "protocols"],
+      "reasons": ["Financial innovation", "Yield farming", "Liquidity pools", "Composability"]
+    }
+  },
+  "nft_platform": {
+    "id": "nft_platform",
+    "result": {
+      "name": "NFT Platform",
+      "description": "Non-Fungible Token marketplace development",
+      "url": "https://opensea.io/build",
+      "tags": ["nft", "ethereum", "marketplace", "digital-assets"],
+      "reasons": ["Digital ownership", "Creator economy", "Metadata standards", "Royalties"]
+    }
+  },
+  "dapp_framework": {
+    "id": "dapp_framework",
+    "result": {
+      "name": "dApp Frontend",
+      "description": "Decentralized application user interface",
+      "url": "https://web3js.readthedocs.io",
+      "tags": ["dapp", "web3", "ethereum", "frontend"],
+      "reasons": ["Web3 integration", "Wallet connection", "Smart contract interaction", "Decentralized"]
+    }
+  },
+  "blockchain_infra": {
+    "id": "blockchain_infra",
+    "result": {
+      "name": "Blockchain Infrastructure",
+      "description": "Custom blockchain and node infrastructure",
+      "url": "https://substrate.io",
+      "tags": ["blockchain", "infrastructure", "nodes", "consensus"],
+      "reasons": ["Custom consensus", "Validator networks", "Cross-chain", "Governance"]
+    }
+  },
+  "container_platform": {
+    "id": "container_platform",
+    "result": {
+      "name": "Docker + Kubernetes",
+      "description": "Container orchestration platform",
+      "url": "https://kubernetes.io",
+      "tags": ["containers", "kubernetes", "docker", "orchestration"],
+      "reasons": ["Scalable", "Cloud native", "Self-healing", "Industry standard"]
+    }
+  },
+  "monitoring_stack": {
+    "id": "monitoring_stack",
+    "result": {
+      "name": "Prometheus + Grafana",
+      "description": "Monitoring and observability stack",
+      "url": "https://prometheus.io",
+      "tags": ["monitoring", "metrics", "grafana", "alerting"],
+      "reasons": ["Time series data", "Rich dashboards", "Alerting", "Open source"]
+    }
+  },
+  "cloud_provider": {
+    "id": "cloud_provider",
+    "question": "Which cloud provider?",
+    "metadata": { "type": "multiple-choice" },
+    "options": [
+      { "text": "AWS", "icon": "☁️", "nextId": "aws_result" },
+      { "text": "Google Cloud", "icon": "☁️", "nextId": "gcp_result" },
+      { "text": "Azure", "icon": "☁️", "nextId": "azure_result" }
+    ]
+  },
+  "config_management": {
+    "id": "config_management",
+    "result": {
+      "name": "Ansible",
+      "description": "Configuration management and automation",
+      "url": "https://www.ansible.com",
+      "tags": ["automation", "configuration", "ansible", "infrastructure"],
+      "reasons": ["Agentless", "YAML syntax", "Idempotent", "Large community"]
+    }
+  },
+  "aws_result": {
+    "id": "aws_result",
+    "result": {
+      "name": "AWS",
+      "description": "Amazon Web Services cloud platform",
+      "url": "https://aws.amazon.com",
+      "tags": ["cloud", "aws", "scalable", "services"],
+      "reasons": ["Largest provider", "Comprehensive services", "Global presence", "Enterprise ready"]
+    }
+  },
+  "gcp_result": {
+    "id": "gcp_result",
+    "result": {
+      "name": "Google Cloud Platform",
+      "description": "Google's cloud computing services",
+      "url": "https://cloud.google.com",
+      "tags": ["cloud", "google", "ai", "data"],
+      "reasons": ["AI/ML services", "Data analytics", "Kubernetes origin", "Competitive pricing"]
+    }
+  },
+  "azure_result": {
+    "id": "azure_result",
+    "result": {
+      "name": "Microsoft Azure",
+      "description": "Microsoft's cloud platform",
+      "url": "https://azure.microsoft.com",
+      "tags": ["cloud", "microsoft", "enterprise", "hybrid"],
+      "reasons": ["Microsoft ecosystem", "Hybrid cloud", "Enterprise focus", "Active Directory"]
+    }
+  },
+  "data_warehouse_platform": {
+    "id": "data_warehouse_platform",
+    "result": {
+      "name": "Snowflake",
+      "description": "Cloud data warehouse platform",
+      "url": "https://www.snowflake.com",
+      "tags": ["data-warehouse", "cloud", "analytics", "sql"],
+      "reasons": ["Scalable compute", "Multi-cloud", "Zero-copy cloning", "Time travel"]
+    }
+  },
+  "streaming_platform": {
+    "id": "streaming_platform",
+    "result": {
+      "name": "Apache Kafka",
+      "description": "Distributed streaming platform",
+      "url": "https://kafka.apache.org",
+      "tags": ["streaming", "real-time", "kafka", "distributed"],
+      "reasons": ["High throughput", "Fault tolerant", "Real-time processing", "Ecosystem"]
+    }
+  },
+  "etl_tool": {
+    "id": "etl_tool",
+    "result": {
+      "name": "Apache Spark",
+      "description": "Unified analytics engine for big data",
+      "url": "https://spark.apache.org",
+      "tags": ["etl", "spark", "big-data", "processing"],
+      "reasons": ["In-memory processing", "Multi-language", "Batch & streaming", "Machine learning"]
+    }
+  },
+  "data_lake_platform": {
+    "id": "data_lake_platform",
+    "result": {
+      "name": "Delta Lake",
+      "description": "Open-source storage layer for data lakes",
+      "url": "https://delta.io",
+      "tags": ["data-lake", "spark", "versioning", "acid"],
+      "reasons": ["ACID transactions", "Schema evolution", "Time travel", "Unified batch/streaming"]
+    }
+  },
+  "iot_cloud": {
+    "id": "iot_cloud",
+    "result": {
+      "name": "AWS IoT Core",
+      "description": "Managed cloud service for IoT devices",
+      "url": "https://aws.amazon.com/iot-core/",
+      "tags": ["iot", "aws", "cloud", "mqtt"],
+      "reasons": ["Device management", "Secure communication", "Rules engine", "Integration"]
+    }
+  },
+  "edge_platform": {
+    "id": "edge_platform",
+    "result": {
+      "name": "NVIDIA Jetson",
+      "description": "AI computing platform for edge devices",
+      "url": "https://developer.nvidia.com/embedded-computing",
+      "tags": ["edge", "ai", "nvidia", "embedded"],
+      "reasons": ["GPU acceleration", "AI inference", "Low power", "Development tools"]
+    }
+  },
+  "home_automation": {
+    "id": "home_automation",
+    "result": {
+      "name": "Home Assistant",
+      "description": "Open source home automation platform",
+      "url": "https://www.home-assistant.io",
+      "tags": ["home-automation", "iot", "python", "local"],
+      "reasons": ["Local control", "Device integration", "Automation", "Privacy focused"]
+    }
+  },
+  "traditional_cms": {
+    "id": "traditional_cms",
+    "result": {
+      "name": "WordPress",
+      "description": "Popular content management system",
+      "url": "https://wordpress.org",
+      "tags": ["cms", "php", "mysql", "traditional"],
+      "reasons": ["Largest CMS", "Plugin ecosystem", "Themes", "User friendly"]
+    }
+  },
+  "ecommerce_cms": {
+    "id": "ecommerce_cms",
+    "result": {
+      "name": "WooCommerce",
+      "description": "WordPress e-commerce plugin",
+      "url": "https://woocommerce.com",
+      "tags": ["ecommerce", "wordpress", "php", "plugin"],
+      "reasons": ["WordPress integration", "Flexible", "Extensions", "Payment gateways"]
+    }
+  },
+  "bi_tool": {
+    "id": "bi_tool",
+    "result": {
+      "name": "Tableau",
+      "description": "Business intelligence and analytics platform",
+      "url": "https://www.tableau.com",
+      "tags": ["bi", "analytics", "visualization", "enterprise"],
+      "reasons": ["Powerful visualizations", "Drag-and-drop", "Enterprise ready", "Data connections"]
+    }
+  },
+  "admin_framework": {
+    "id": "admin_framework",
+    "result": {
+      "name": "React Admin",
+      "description": "Admin interface framework for React",
+      "url": "https://marmelab.com/react-admin/",
+      "tags": ["admin", "react", "dashboard", "crud"],
+      "reasons": ["React ecosystem", "Data providers", "Authentication", "Customizable"]
+    }
+  },
+  "analytics_framework": {
+    "id": "analytics_framework",
+    "result": {
+      "name": "Metabase",
+      "description": "Open source business intelligence tool",
+      "url": "https://www.metabase.com",
+      "tags": ["analytics", "bi", "dashboard", "open-source"],
+      "reasons": ["Easy setup", "SQL interface", "Dashboards", "Open source"]
+    }
+  },
+  "social_framework": {
+    "id": "social_framework",
+    "result": {
+      "name": "MERN Social",
+      "description": "Social network built with MERN stack",
+      "url": "https://github.com/shama/mern.io",
+      "tags": ["social", "mern", "react", "nodejs"],
+      "reasons": ["Real-time features", "User authentication", "Feed algorithms", "Scalable"]
+    }
+  },
+  "chat_framework": {
+    "id": "chat_framework",
+    "result": {
+      "name": "Socket.io + React",
+      "description": "Real-time chat application framework",
+      "url": "https://socket.io",
+      "tags": ["chat", "real-time", "socketio", "react"],
+      "reasons": ["Real-time messaging", "WebSocket fallback", "Room management", "Cross-platform"]
+    }
+  },
+  "forum_platform": {
+    "id": "forum_platform",
+    "result": {
+      "name": "Discourse",
+      "description": "Modern forum and community platform",
+      "url": "https://www.discourse.org",
+      "tags": ["forum", "community", "ruby", "modern"],
+      "reasons": ["Modern interface", "Mobile friendly", "Moderation tools", "SEO optimized"]
+    }
+  },
+  "playstation_result": {
+    "id": "playstation_result",
+    "result": {
+      "name": "PlayStation SDK",
+      "description": "Development tools for PlayStation consoles",
+      "url": "https://www.playstation.com/en-us/develop/",
+      "tags": ["game", "playstation", "console", "sdk"],
+      "reasons": ["Large user base", "Exclusive titles", "Development support", "Hardware power"]
+    }
+  },
+  "xbox_result": {
+    "id": "xbox_result",
+    "result": {
+      "name": "Xbox Game Development",
+      "description": "Microsoft Xbox development platform",
+      "url": "https://developer.microsoft.com/games/",
+      "tags": ["game", "xbox", "microsoft", "console"],
+      "reasons": ["Game Pass integration", "Cross-platform", "DirectX", "Azure backend"]
+    }
+  },
+  "nintendo_result": {
+    "id": "nintendo_result",
+    "result": {
+      "name": "Nintendo Switch SDK",
+      "description": "Development tools for Nintendo Switch",
+      "url": "https://developer.nintendo.com/",
+      "tags": ["game", "nintendo", "switch", "portable"],
+      "reasons": ["Unique hardware", "First-party games", "Portable gaming", "Family friendly"]
+    }
+  },
+  "steam_deck_result": {
+    "id": "steam_deck_result",
+    "result": {
+      "name": "Steam Deck Development",
+      "description": "Portable PC gaming development",
+      "url": "https://steamdeck.com/",
+      "tags": ["game", "steam", "portable", "linux"],
+      "reasons": ["PC compatibility", "Linux-based", "Portable", "Steam integration"]
+    }
+  },
+  "godot_indie_result": {
+    "id": "godot_indie_result",
+    "result": {
+      "name": "Godot Engine",
+      "description": "Free and open source game engine",
+      "url": "https://godotengine.org",
+      "tags": ["game", "godot", "indie", "open-source"],
+      "reasons": ["No royalties", "Lightweight", "GDScript", "Node-based"]
+    }
+  },
+  "defold_result": {
+    "id": "defold_result",
+    "result": {
+      "name": "Defold",
+      "description": "Game engine for cross-platform publishing",
+      "url": "https://defold.com",
+      "tags": ["game", "defold", "2d", "lua"],
+      "reasons": ["Small runtime", "Lua scripting", "King backing", "Mobile focused"]
+    }
+  },
+  "love_result": {
+    "id": "love_result",
+    "result": {
+      "name": "LÖVE",
+      "description": "2D game framework for Lua",
+      "url": "https://love2d.org",
+      "tags": ["game", "lua", "2d", "framework"],
+      "reasons": ["Simple API", "Lua scripting", "Cross-platform", "Lightweight"]
+    }
+  },
+  "construct_result": {
+    "id": "construct_result",
+    "result": {
+      "name": "Construct 3",
+      "description": "Browser-based game development tool",
+      "url": "https://www.construct.net",
+      "tags": ["game", "browser", "visual", "2d"],
+      "reasons": ["No coding required", "Browser-based", "Visual scripting", "HTML5 export"]
+    }
+  },
+  "websocket_result": {
+    "id": "websocket_result",
+    "result": {
+      "name": "Socket.io + Node.js",
+      "description": "Real-time bidirectional event-based communication",
+      "url": "https://socket.io",
+      "tags": ["websockets", "real-time", "nodejs", "events"],
+      "reasons": ["Real-time updates", "Fallback support", "Room management", "Event-driven"]
+    }
+  },
+  "game_server_result": {
+    "id": "game_server_result",
+    "result": {
+      "name": "Unity Netcode + Node.js",
+      "description": "Multiplayer game server architecture",
+      "url": "https://docs-multiplayer.unity3d.com/",
+      "tags": ["multiplayer", "unity", "game-server", "networking"],
+      "reasons": ["Unity integration", "Authoritative server", "Anti-cheat", "Scalable"]
+    }
+  },
+  "blog_platform": {
+    "id": "blog_platform",
+    "result": {
+      "name": "Next.js + MDX",
+      "description": "Static blog with React components in markdown",
+      "url": "https://nextjs.org/docs/advanced-features/using-mdx",
+      "tags": ["blog", "nextjs", "mdx", "static"],
+      "reasons": ["SEO optimized", "Fast loading", "Component integration", "Developer friendly"]
+    }
+  },
+  "docs_platform": {
+    "id": "docs_platform",
+    "result": {
+      "name": "Docusaurus",
+      "description": "Documentation website generator",
+      "url": "https://docusaurus.io",
+      "tags": ["docs", "react", "static", "search"],
+      "reasons": ["Built for docs", "Search integration", "Versioning", "Internationalization"]
+    }
+  },
+  "portfolio_platform": {
+    "id": "portfolio_platform",
+    "result": {
+      "name": "Astro",
+      "description": "Modern static site generator for fast portfolios",
+      "url": "https://astro.build",
+      "tags": ["portfolio", "static", "performance", "modern"],
+      "reasons": ["Excellent performance", "Component agnostic", "Image optimization", "SEO friendly"]
+    }
+  },
+  "saas_stack": {
+    "id": "saas_stack",
+    "result": {
+      "name": "Next.js + Supabase + Stripe",
+      "description": "Complete SaaS application stack",
+      "url": "https://supabase.com",
+      "tags": ["saas", "nextjs", "supabase", "stripe"],
+      "reasons": ["Authentication built-in", "Database included", "Payment processing", "Scalable"]
+    }
+  },
+  "collaboration_stack": {
+    "id": "collaboration_stack",
+    "result": {
+      "name": "Yjs + React",
+      "description": "Real-time collaborative editing framework",
+      "url": "https://yjs.dev",
+      "tags": ["collaboration", "real-time", "crdt", "sync"],
+      "reasons": ["Conflict-free merging", "Offline support", "Multi-user", "Framework agnostic"]
+    }
+  },
+  "realtime_data_stack": {
+    "id": "realtime_data_stack",
+    "result": {
+      "name": "React + Socket.io + Redis",
+      "description": "Real-time data streaming architecture",
+      "url": "https://socket.io",
+      "tags": ["real-time", "streaming", "redis", "websockets"],
+      "reasons": ["Live data updates", "Pub/sub messaging", "Scalable", "Low latency"]
+    }
+  },
+  "js_solo_stack": {
+    "id": "js_solo_stack",
+    "result": {
+      "name": "Next.js + Vercel",
+      "description": "Full-stack React framework with seamless deployment",
+      "url": "https://nextjs.org",
+      "tags": ["nextjs", "react", "vercel", "beginner-friendly"],
+      "reasons": ["All-in-one solution", "Easy deployment", "Great documentation", "Built-in API routes"]
+    }
+  },
+  "python_solo_stack": {
+    "id": "python_solo_stack",
+    "result": {
+      "name": "Django + SQLite",
+      "description": "Batteries-included Python web framework",
+      "url": "https://www.djangoproject.com",
+      "tags": ["django", "python", "sqlite", "rapid-development"],
+      "reasons": ["Admin interface included", "ORM built-in", "Security features", "Single developer friendly"]
+    }
+  },
+  "beginner_friendly_stack": {
+    "id": "beginner_friendly_stack",
+    "result": {
+      "name": "Supabase + React",
+      "description": "Backend-as-a-Service with React frontend",
+      "url": "https://supabase.com",
+      "tags": ["supabase", "react", "baas", "beginner"],
+      "reasons": ["No backend code needed", "Real-time features", "Authentication included", "Great tutorials"]
+    }
+  },
+  "backend_focused_stack": {
+    "id": "backend_focused_stack",
+    "result": {
+      "name": "Node.js + Express + PostgreSQL",
+      "description": "Classic backend stack with modern frontend",
+      "url": "https://expressjs.com",
+      "tags": ["nodejs", "express", "postgresql", "api"],
+      "reasons": ["Team expertise leverage", "Proven architecture", "Great ecosystem", "Easy to scale"]
+    }
+  },
+  "balanced_stack": {
+    "id": "balanced_stack",
+    "result": {
+      "name": "T3 Stack",
+      "description": "Type-safe full-stack with Next.js, tRPC, Prisma",
+      "url": "https://create.t3.gg",
+      "tags": ["typescript", "nextjs", "trpc", "prisma"],
+      "reasons": ["End-to-end type safety", "Modern best practices", "Great developer experience", "Balanced approach"]
+    }
+  },
+  "performance_stack": {
+    "id": "performance_stack",
+    "result": {
+      "name": "Go + React + PostgreSQL", 
+      "description": "High-performance backend with modern frontend",
+      "url": "https://golang.org",
+      "tags": ["go", "react", "postgresql", "performance"],
+      "reasons": ["Excellent performance", "Low resource usage", "Concurrent by design", "Enterprise ready"]
+    }
+  },
+  "enterprise_integration_stack": {
+    "id": "enterprise_integration_stack",
+    "result": {
+      "name": "Spring Boot + Angular",
+      "description": "Enterprise Java stack with TypeScript frontend", 
+      "url": "https://spring.io/projects/spring-boot",
+      "tags": ["java", "spring", "angular", "enterprise"],
+      "reasons": ["Legacy system integration", "Enterprise patterns", "Strong typing", "Mature ecosystem"]
+    }
+  }
+}
