@@ -18,7 +18,51 @@ export interface QuestionHistory {
 /**
  * Smart question database that can split tech stacks efficiently
  */
-const SMART_QUESTIONS: SmartQuestion[] = [
+const SMART_QUESTIONS: SmartQuestion[,{
+    id: 'needs_auth',
+    text: 'Does your project require authentication/login functionality?',
+    description: 'Auth features often guide framework and backend selection',
+    type: 'boolean',
+    options: ['Yes', 'No'],
+    scoringFn: (stack) => 
+      stack.tags.some(tag => ['auth', 'firebase', 'nextauth', 'supabase', 'django'].includes(tag)) ? 1 : 0
+  },
+  {
+    id: 'mobile_app',
+    text: 'Is your project intended to be mobile-first or a cross-platform app?',
+    description: 'Useful for distinguishing mobile vs web-first stacks',
+    type: 'boolean',
+    options: ['Yes', 'No'],
+    scoringFn: (stack) => 
+      stack.tags.some(tag => ['mobile', 'flutter', 'reactnative', 'ionic'].includes(tag)) ? 1 : 0
+  },
+  {
+    id: 'interactive_ui',
+    text: 'Will the UI require high interactivity (like a dashboard or real-time UI)?',
+    description: 'Some frameworks are better for rich interactive experiences',
+    type: 'boolean',
+    options: ['Yes', 'No'],
+    scoringFn: (stack) =>
+      stack.tags.some(tag => ['react', 'svelte', 'vue', 'websocket'].includes(tag)) ? 1 : 0
+  },
+  {
+    id: 'payment_integration',
+    text: 'Will your app include payment or checkout functionality?',
+    description: 'E-commerce and SaaS apps often require secure payment support',
+    type: 'boolean',
+    options: ['Yes', 'No'],
+    scoringFn: (stack) =>
+      stack.tags.some(tag => ['stripe', 'commerce', 'payment', 'saas'].includes(tag)) ? 1 : 0
+  },
+  {
+    id: 'batteries_included',
+    text: 'Do you prefer a batteries-included framework with built-in tools?',
+    description: 'These frameworks include routing, auth, ORM, templating, etc.',
+    type: 'boolean',
+    options: ['Yes', 'No'],
+    scoringFn: (stack) =>
+      stack.tags.some(tag => ['django', 'rails', 'laravel', 'nextjs', 'fullstack'].includes(tag)) ? 1 : 0
+  },] = [
   {
     id: 'primary_focus',
     text: 'Is this primarily a frontend/UI project?',
