@@ -18,7 +18,8 @@ export interface QuestionHistory {
 /**
  * Smart question database that can split tech stacks efficiently
  */
-const SMART_QUESTIONS: SmartQuestion[,{
+const SMART_QUESTIONS: SmartQuestion[] = [
+  {
     id: 'needs_auth',
     text: 'Does your project require authentication/login functionality?',
     description: 'Auth features often guide framework and backend selection',
@@ -62,7 +63,7 @@ const SMART_QUESTIONS: SmartQuestion[,{
     options: ['Yes', 'No'],
     scoringFn: (stack) =>
       stack.tags.some(tag => ['django', 'rails', 'laravel', 'nextjs', 'fullstack'].includes(tag)) ? 1 : 0
-  },] = [
+  },
   {
     id: 'primary_focus',
     text: 'Is this primarily a frontend/UI project?',
