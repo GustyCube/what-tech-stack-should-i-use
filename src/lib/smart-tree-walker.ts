@@ -25,8 +25,14 @@ const SMART_QUESTIONS: SmartQuestion[] = [
     description: 'Auth features often guide framework and backend selection',
     type: 'boolean',
     options: ['Yes', 'No'],
-    scoringFn: (stack) => 
-      stack.tags.some(tag => ['auth', 'firebase', 'nextauth', 'supabase', 'django'].includes(tag)) ? 1 : 0
+    scoringFn: (stack) => {
+      const generalTags = ['auth'];
+      const implementations = ['firebase', 'nextauth', 'supabase'];
+      const frameworks = ['django'];
+      return stack.tags.some(tag => generalTags.includes(tag)) ||
+             stack.tags.some(tag => implementations.includes(tag)) ||
+             stack.tags.some(tag => frameworks.includes(tag)) ? 1 : 0;
+    }
   },
   {
     id: 'mobile_app',
