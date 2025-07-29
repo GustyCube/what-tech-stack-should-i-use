@@ -49,8 +49,13 @@ const SMART_QUESTIONS: SmartQuestion[] = [
     description: 'Some frameworks are better for rich interactive experiences',
     type: 'boolean',
     options: ['Yes', 'No'],
-    scoringFn: (stack) =>
-      stack.tags.some(tag => ['react', 'svelte', 'vue', 'websocket'].includes(tag)) ? 1 : 0
+    scoringFn: (stack) => {
+      const uiFrameworks = ['react', 'svelte', 'vue'];
+      const communicationProtocols = ['websocket'];
+      const hasInteractiveFramework = stack.tags.some(tag => uiFrameworks.includes(tag));
+      const hasRealTimeSupport = stack.tags.some(tag => communicationProtocols.includes(tag));
+      return hasInteractiveFramework || hasRealTimeSupport ? 1 : 0;
+    }
   },
   {
     id: 'payment_integration',
